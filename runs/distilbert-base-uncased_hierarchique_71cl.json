@@ -1,0 +1,26 @@
+{
+  "run_id": "distilbert-base-uncased_hierarchique_71cl",
+  "config": {
+    "model_name": "distilbert-base-uncased",
+    "mode": "hierarchique_multilabel",
+    "num_classes": 71,
+    "n_train": 40000,
+    "n_val": 10650,
+    "n_test": 43229,
+    "seed": 42,
+    "epochs_effectuees": 10,
+    "poids_max": 10.0,
+    "liens_hierarchiques": 2123,
+    "n_sorties": 386,
+    "etiquettes_par_cve": 29.41080093383789,
+    "checkpoint": "best_distilbert-base-uncased_hierarchique_71cl.weights.h5"
+  },
+  "validation": {
+    "best_f1_exact": 0.4330850822895375
+  },
+  "test": {
+    "accuracy": 0.566425316338569,
+    "f1_macro": 0.4143262986491279
+  },
+  "provenance": "entrainement_hierarchique.py"
+}

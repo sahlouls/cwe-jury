@@ -1,0 +1,169 @@
+{
+ "source": "catalogue MITRE COMPLET (cwec_v4.20.xml) -- et non un export de vue (1000.csv ne contient aucune Category)",
+ "n_faiblesses_catalogue": 969,
+ "n_categories_catalogue": 422,
+ "vocabulaire_strategies": {
+  "Input Validation": 204,
+  "Environment Hardening": 58,
+  "Libraries or Frameworks": 51,
+  "Output Encoding": 49,
+  "Attack Surface Reduction": 41,
+  "Separation of Privilege": 38,
+  "Language Selection": 18,
+  "Refactoring": 15,
+  "Sandbox or Jail": 12,
+  "Firewall": 12,
+  "Enforcement by Conversion": 11,
+  "Compilation or Build Hardening": 10,
+  "Resource Limitation": 6,
+  "Parameterization": 5
+ },
+ "par_niveau_abstraction": [
+  {
+   "niveau": "Pillar",
+   "n": 10,
+   "avec_mitigation": 3,
+   "part": 0.3,
+   "avec_strategie": 2,
+   "part_strategie": 0.2
+  },
+  {
+   "niveau": "Class",
+   "n": 114,
+   "avec_mitigation": 65,
+   "part": 0.5701754385964912,
+   "avec_strategie": 30,
+   "part_strategie": 0.2631578947368421
+  },
+  {
+   "niveau": "Base",
+   "n": 539,
+   "avec_mitigation": 358,
+   "part": 0.6641929499072357,
+   "avec_strategie": 102,
+   "part_strategie": 0.18923933209647495
+  },
+  {
+   "niveau": "Variant",
+   "n": 299,
+   "avec_mitigation": 242,
+   "part": 0.8093645484949833,
+   "avec_strategie": 98,
+   "part_strategie": 0.3277591973244147
+  },
+  {
+   "niveau": "Compound",
+   "n": 7,
+   "avec_mitigation": 3,
+   "part": 0.42857142857142855,
+   "avec_strategie": 3,
+   "part_strategie": 0.42857142857142855
+  },
+  {
+   "niveau": "Category",
+   "n": 422,
+   "avec_mitigation": 0,
+   "part": 0.0,
+   "avec_strategie": 0,
+   "part_strategie": 0.0
+  }
+ ],
+ "n_faiblesses_sans_mitigation": 298,
+ "par_famille": [
+  {
+   "famille": "resource-control",
+   "n_cwe": 324,
+   "avec_mitigation": 233,
+   "part": 0.7191358024691358,
+   "jamais_predite": false
+  },
+  {
+   "famille": "coding-standards",
+   "n_cwe": 165,
+   "avec_mitigation": 83,
+   "part": 0.503030303030303,
+   "jamais_predite": false
+  },
+  {
+   "famille": "access-control",
+   "n_cwe": 148,
+   "avec_mitigation": 133,
+   "part": 0.8986486486486487,
+   "jamais_predite": false
+  },
+  {
+   "famille": "neutralization",
+   "n_cwe": 129,
+   "avec_mitigation": 105,
+   "part": 0.813953488372093,
+   "jamais_predite": false
+  },
+  {
+   "famille": "protection-failure",
+   "n_cwe": 77,
+   "avec_mitigation": 55,
+   "part": 0.7142857142857143,
+   "jamais_predite": false
+  },
+  {
+   "famille": "control-flow",
+   "n_cwe": 39,
+   "avec_mitigation": 24,
+   "part": 0.6153846153846154,
+   "jamais_predite": false
+  },
+  {
+   "famille": "autre",
+   "n_cwe": 25,
+   "avec_mitigation": 0,
+   "part": 0.0,
+   "jamais_predite": true
+  },
+  {
+   "famille": "exceptional-conditions",
+   "n_cwe": 21,
+   "avec_mitigation": 14,
+   "part": 0.6666666666666666,
+   "jamais_predite": true
+  },
+  {
+   "famille": "incorrect-comparison",
+   "n_cwe": 16,
+   "avec_mitigation": 10,
+   "part": 0.625,
+   "jamais_predite": true
+  },
+  {
+   "famille": "calculation-error",
+   "n_cwe": 14,
+   "avec_mitigation": 11,
+   "part": 0.7857142857142857,
+   "jamais_predite": false
+  },
+  {
+   "famille": "interaction-error",
+   "n_cwe": 11,
+   "avec_mitigation": 3,
+   "part": 0.2727272727272727,
+   "jamais_predite": true
+  }
+ ],
+ "croisement_familles_jamais_predites": {
+  "familles_jamais_predites": {
+   "n_cwe": 73,
+   "avec_mitigation": 27,
+   "part": 0.3698630136986301
+  },
+  "familles_jamais_predites_hors_autre": {
+   "n_cwe": 48,
+   "avec_mitigation": 27,
+   "part": 0.5625
+  },
+  "familles_predites": {
+   "n_cwe": 896,
+   "avec_mitigation": 644,
+   "part": 0.71875
+  }
+ },
+ "provenance": "actionnabilite_cwe.py"
+}

@@ -1,0 +1,78 @@
+{
+  "run_id": "SecureBERT_finetune_10cl",
+  "annee_population": 2025,
+  "n_population": 43229,
+  "part_dans_perimetre": 0.41053459483217286,
+  "taux_faux_nommage_hors_perimetre": 1.0,
+  "cible_precision": 0.9,
+  "precision_max_observee": 0.8461538461538461,
+  "courbe": [
+    {
+      "seuil": 0.0,
+      "couverture": 1.0,
+      "n": 43229,
+      "precision": 0.39832057183834924
+    },
+    {
+      "seuil": 0.5,
+      "couverture": 0.9528557218533854,
+      "n": 41191,
+      "precision": 0.41749411279162923
+    },
+    {
+      "seuil": 0.7,
+      "couverture": 0.8757084364662611,
+      "n": 37856,
+      "precision": 0.45200232459847844
+    },
+    {
+      "seuil": 0.8,
+      "couverture": 0.8336764671863796,
+      "n": 36039,
+      "precision": 0.4732373262299176
+    },
+    {
+      "seuil": 0.9,
+      "couverture": 0.7761687755904602,
+      "n": 33553,
+      "precision": 0.5055583703394629
+    },
+    {
+      "seuil": 0.95,
+      "couverture": 0.7310601679428161,
+      "n": 31603,
+      "precision": 0.5332721577065469
+    },
+    {
+      "seuil": 0.99,
+      "couverture": 0.6330472599412431,
+      "n": 27366,
+      "precision": 0.5915004019586348
+    },
+    {
+      "seuil": 0.995,
+      "couverture": 0.5574035948090402,
+      "n": 24096,
+      "precision": 0.5944555112881806
+    },
+    {
+      "seuil": 0.999,
+      "couverture": 0.3424552962131902,
+      "n": 14804,
+      "precision": 0.5400567414212375
+    }
+  ],
+  "points_optimaux": {
+    "0.80": {
+      "seuil": 0.9999940395355225,
+      "n_cve": 13,
+      "couverture": 0.00030072405098429295,
+      "precision": 0.8461538461538461
+    },
+    "0.85": null,
+    "0.90": null,
+    "0.95": null
+  },
+  "contrat": null,
+  "provenance": "contrat_precision.py"
+}

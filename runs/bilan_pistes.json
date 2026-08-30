@@ -1,0 +1,98 @@
+{
+ "reference": {
+  "run": "distilbert-base-uncased_finetune_71cl",
+  "niveau1": {
+   "seuil": 0.9969736337661743,
+   "n_cve": 15476,
+   "couverture": 0.3580004163871475,
+   "precision": 0.9000387697079348
+  },
+  "niveau3": {
+   "seuil": 0.9739844799041748,
+   "precision": 0.7830776305338406,
+   "couverture": 0.5533553864304055,
+   "n_cve": 23921
+  },
+  "niveau3_n_justes": 18732
+ },
+ "note": "niveau 1 = seuil cherche sur l'annee de test (fuite) ; niveau 3 = cible fixee d'avance, calibree sur la validation",
+ "critere_verdict": "domination sur les deux axes du contrat au niveau 3",
+ "pistes": [
+  {
+   "run": "distilbert-base-uncased_finetune_71cl_full",
+   "piste": "5 fois plus de donnees (218k CVE)",
+   "intuition": "le levier le plus classique en apprentissage profond",
+   "niveau1_n_cve": 14326,
+   "niveau1_ecart": -1150,
+   "niveau3_precision": 0.8154780940198273,
+   "niveau3_couverture": 0.5786856045710056,
+   "niveau3_n_cve": 25016,
+   "ecart_precision": 0.032400463485986686,
+   "ecart_couverture": 0.025330218140600103,
+   "niveau3_n_justes": 20400,
+   "ecart_justes": 1668,
+   "verdict": "AIDE"
+  },
+  {
+   "run": "distilbert-base-uncased_finetune_121cl",
+   "piste": "Elargir le perimetre a 121 classes",
+   "intuition": "plus de couverture theorique",
+   "niveau1_n_cve": 5245,
+   "niveau1_ecart": -10231,
+   "niveau3_precision": 0.7750886199731084,
+   "niveau3_couverture": 0.5677438756390386,
+   "niveau3_n_cve": 24543,
+   "ecart_precision": -0.007989010560732202,
+   "ecart_couverture": 0.014388489208633115,
+   "niveau3_n_justes": 19023,
+   "ecart_justes": 291,
+   "verdict": "ambigue"
+  },
+  {
+   "run": "distilbert-base-uncased_finetune_10cl",
+   "piste": "Restreindre a 10 classes",
+   "intuition": "moins de classes a confondre",
+   "niveau1_n_cve": 205,
+   "niveau1_ecart": -15271,
+   "niveau3_precision": 0.8922794117647059,
+   "niveau3_couverture": 0.06292072451363667,
+   "niveau3_n_cve": 2720,
+   "ecart_precision": 0.10920178123086532,
+   "ecart_couverture": -0.4904346619167688,
+   "niveau3_n_justes": 2427,
+   "ecart_justes": -16305,
+   "verdict": "ambigue"
+  },
+  {
+   "run": "SecureBERT_finetune_71cl",
+   "piste": "Modele de domaine (SecureBERT)",
+   "intuition": "pre-entraine sur du texte cyber : il connait deja le jargon",
+   "niveau1_n_cve": 8533,
+   "niveau1_ecart": -6943,
+   "niveau3_precision": 0.7871039944903582,
+   "niveau3_couverture": 0.537417011728238,
+   "niveau3_n_cve": 23232,
+   "ecart_precision": 0.004026363956517565,
+   "ecart_couverture": -0.015938374702167524,
+   "niveau3_n_justes": 18286,
+   "ecart_justes": -446,
+   "verdict": "ambigue"
+  },
+  {
+   "run": "distilbert-base-uncased_sigmoidesimple_71cl",
+   "piste": "Sorties sigmoides (abstention possible)",
+   "intuition": "des sigmoides peuvent toutes etre basses -- le softmax, non",
+   "niveau1_n_cve": 2583,
+   "niveau1_ecart": -12893,
+   "niveau3_precision": 0.7949429803955068,
+   "niveau3_couverture": 0.5416040158227116,
+   "niveau3_n_cve": 23413,
+   "ecart_precision": 0.011865349861666208,
+   "ecart_couverture": -0.011751370607693934,
+   "niveau3_n_justes": 18612,
+   "ecart_justes": -120,
+   "verdict": "ambigue"
+  }
+ ],
+ "provenance": "bilan_pistes.py"
+}

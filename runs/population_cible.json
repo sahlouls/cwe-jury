@@ -1,0 +1,23 @@
+{
+ "annee": 2025,
+ "n_cve_publiees": 45275,
+ "n_avec_cwe": 43240,
+ "n_sans_cwe": 2035,
+ "n_sans_cwe_rejetees": 1630,
+ "n_angle_mort": 405,
+ "part_couverte_par_notre_evaluation": 0.9550524572059635,
+ "part_angle_mort": 0.00894533406957482,
+ "detail_statuts_sans_cwe": {
+  "Rejected": 1630,
+  "Awaiting Analysis": 322,
+  "Analyzed": 52,
+  "Modified": 22,
+  "Deferred": 8,
+  "Received": 1
+ },
+ "toutes_annees": {
+  "n_sans_cwe": 37732,
+  "n_rejetees": 16866
+ },
+ "provenance": "calcule depuis ../cyber_cve/data/dataset.parquet"
+}

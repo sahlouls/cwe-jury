@@ -1,0 +1,18 @@
+.venv
+frontend/node_modules
+frontend/dist
+__pycache__
+*.pyc
+.git
+runs/*.npz
+notebooks
+docs
+# on garde les poids 71cl_full (necessaires a l'inference), on exclut les autres .h5
+best_distilbert-base-uncased_famille*.h5
+best_distilbert-base-uncased_finetune_10cl*.h5
+best_distilbert-base-uncased_finetune_121cl*.h5
+best_distilbert-base-uncased_finetune_71cl.weights.h5
+best_distilbert-base-uncased_frozen*.h5
+best_distilbert-base-uncased_hierarchique*.h5
+best_distilbert-base-uncased_sigmoidesimple*.h5
+best_SecureBERT*.h5

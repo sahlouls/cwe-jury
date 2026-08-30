@@ -1,0 +1,126 @@
+{
+  "run_id": "distilbert-base-uncased_finetune_71cl_full",
+  "cible": 0.9,
+  "seuil": 0.995,
+  "annee_calibration": 2024,
+  "annee_test": 2025,
+  "n_noeuds_candidats": 385,
+  "test": {
+    "taux_reponse": 0.6042934141432834,
+    "precision": 0.9083566206025342,
+    "reponses_exactes": 0.11402068056166,
+    "granularite_moyenne": 7.24660261072618,
+    "hors_perimetre_taux_reponse": 0.1345666119647919,
+    "hors_perimetre_precision": 0.6263858093126385
+  },
+  "balayage_calibration": [
+    {
+      "seuil": 0.5,
+      "taux_reponse": 0.9579049263532428,
+      "precision": 0.7759327033375212,
+      "exactes": 0.24459095309107082,
+      "granularite": 3.6206369148413176
+    },
+    {
+      "seuil": 0.6,
+      "taux_reponse": 0.9472307249561782,
+      "precision": 0.8003369607247418,
+      "exactes": 0.229913926170107,
+      "granularite": 4.359912721648346
+    },
+    {
+      "seuil": 0.7,
+      "taux_reponse": 0.9334432148183032,
+      "precision": 0.8260881751170156,
+      "exactes": 0.21528922376579546,
+      "granularite": 5.1977914179209055
+    },
+    {
+      "seuil": 0.8,
+      "taux_reponse": 0.911911676215891,
+      "precision": 0.8554911636447097,
+      "exactes": 0.19723726552075976,
+      "granularite": 6.0830273123708976
+    },
+    {
+      "seuil": 0.9,
+      "taux_reponse": 0.8696073045025247,
+      "precision": 0.8871807214416799,
+      "exactes": 0.17777254532611256,
+      "granularite": 6.944553085231204
+    },
+    {
+      "seuil": 0.95,
+      "taux_reponse": 0.8155299165423959,
+      "precision": 0.911394841524445,
+      "exactes": 0.15940663998116317,
+      "granularite": 7.152123700757089
+    },
+    {
+      "seuil": 0.99,
+      "taux_reponse": 0.6688642963660624,
+      "precision": 0.9452397715716185,
+      "exactes": 0.11537555921827172,
+      "granularite": 7.292693420949699
+    }
+  ],
+  "balayage_hors_echantillon": [
+    {
+      "seuil": 0.9,
+      "precision_cal": 0.8871807214416799,
+      "precision_test": 0.8361434211930424,
+      "taux_reponse": 0.867103102084249,
+      "exactes": 0.2078465844687594,
+      "granularite": 5.943255789136698
+    },
+    {
+      "seuil": 0.95,
+      "precision_cal": 0.911394841524445,
+      "precision_test": 0.8560251722085211,
+      "taux_reponse": 0.8160494112748387,
+      "exactes": 0.18989567188692777,
+      "granularite": 5.948805170507696
+    },
+    {
+      "seuil": 0.97,
+      "precision_cal": 0.9245442554198938,
+      "precision_test": 0.8685750104471375,
+      "taux_reponse": 0.7749890120058294,
+      "exactes": 0.1753221217238428,
+      "granularite": 5.868157124947764
+    },
+    {
+      "seuil": 0.99,
+      "precision_cal": 0.9452397715716185,
+      "precision_test": 0.8919408907436547,
+      "taux_reponse": 0.6762589928057554,
+      "exactes": 0.1378472784473386,
+      "granularite": 6.457515222001779
+    },
+    {
+      "seuil": 0.995,
+      "precision_cal": 0.9543329108945505,
+      "precision_test": 0.9083566206025342,
+      "taux_reponse": 0.6042934141432834,
+      "exactes": 0.11402068056166,
+      "granularite": 7.24660261072618
+    },
+    {
+      "seuil": 0.999,
+      "precision_cal": 0.9729302268994464,
+      "precision_test": 0.9552386405038256,
+      "taux_reponse": 0.4444470147354785,
+      "exactes": 0.06849568576649934,
+      "granularite": 14.56175506167699
+    },
+    {
+      "seuil": 0.9999,
+      "precision_cal": 0.9906123319820781,
+      "precision_test": 0.9921312573246275,
+      "taux_reponse": 0.13817113511762938,
+      "exactes": 0.029748548428138517,
+      "granularite": 33.49589820860539
+    }
+  ],
+  "provenance": "hierarchie_cwe.py"
+}

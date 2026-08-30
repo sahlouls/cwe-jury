@@ -1,0 +1,98 @@
+{
+  "run_id": "distilbert-base-uncased_finetune_10cl",
+  "annee_population": 2025,
+  "n_population": 43229,
+  "part_dans_perimetre": 0.41053459483217286,
+  "taux_faux_nommage_hors_perimetre": 1.0,
+  "cible_precision": 0.9,
+  "precision_max_observee": 1.0,
+  "courbe": [
+    {
+      "seuil": 0.0,
+      "couverture": 1.0,
+      "n": 43229,
+      "precision": 0.3978579194522196
+    },
+    {
+      "seuil": 0.5,
+      "couverture": 0.8881537856531495,
+      "n": 38394,
+      "precision": 0.44566859405115383
+    },
+    {
+      "seuil": 0.7,
+      "couverture": 0.7833167549561637,
+      "n": 33862,
+      "precision": 0.5003248479121138
+    },
+    {
+      "seuil": 0.8,
+      "couverture": 0.7317078812833977,
+      "n": 31631,
+      "precision": 0.5315039043975847
+    },
+    {
+      "seuil": 0.9,
+      "couverture": 0.6610145966827824,
+      "n": 28575,
+      "precision": 0.5785826771653543
+    },
+    {
+      "seuil": 0.95,
+      "couverture": 0.6029979874621203,
+      "n": 26067,
+      "precision": 0.6217056047876626
+    },
+    {
+      "seuil": 0.99,
+      "couverture": 0.5123181197807027,
+      "n": 22147,
+      "precision": 0.6644692283379239
+    },
+    {
+      "seuil": 0.995,
+      "couverture": 0.4219389761502695,
+      "n": 18240,
+      "precision": 0.6701206140350877
+    },
+    {
+      "seuil": 0.999,
+      "couverture": 0.14427814661454116,
+      "n": 6237,
+      "precision": 0.7537277537277537
+    }
+  ],
+  "points_optimaux": {
+    "0.80": {
+      "seuil": 0.9992639422416687,
+      "n_cve": 5245,
+      "couverture": 0.12133058826250896,
+      "precision": 0.8
+    },
+    "0.85": {
+      "seuil": 0.9994662404060364,
+      "n_cve": 4267,
+      "couverture": 0.09870688658076754,
+      "precision": 0.8500117178345442
+    },
+    "0.90": {
+      "seuil": 0.9999610185623169,
+      "n_cve": 205,
+      "couverture": 0.004742186957829235,
+      "precision": 0.9024390243902439
+    },
+    "0.95": {
+      "seuil": 0.9999765157699585,
+      "n_cve": 40,
+      "couverture": 0.000925304772259363,
+      "precision": 0.95
+    }
+  },
+  "contrat": {
+    "seuil": 0.9999610185623169,
+    "n_cve": 205,
+    "couverture": 0.004742186957829235,
+    "precision": 0.9024390243902439
+  },
+  "provenance": "contrat_precision.py"
+}

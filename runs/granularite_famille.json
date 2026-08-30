@@ -1,0 +1,255 @@
+{
+ "cible": 0.9,
+ "source_probabilites": "runs/probas_distilbert-base-uncased_finetune_71cl_full.npz",
+ "note": "borne inferieure : relecture d'un modele entraine sur 71 classes, sans reentrainement sur les familles",
+ "familles": [
+  "access-control",
+  "autre",
+  "calculation-error",
+  "coding-standards",
+  "control-flow",
+  "exceptional-conditions",
+  "incorrect-comparison",
+  "interaction-error",
+  "neutralization",
+  "protection-failure",
+  "resource-control"
+ ],
+ "n_familles": 11,
+ "granularite_71_classes": {
+  "seuil": 0.9639794230461121,
+  "precision": 0.8154780940198273,
+  "couverture": 0.5786856045710056,
+  "n_cve": 25016,
+  "part_hors_perimetre": 0.15505794721136273
+ },
+ "granularite_famille": {
+  "seuil": 0.6282965540885925,
+  "precision": 0.9074553489709997,
+  "couverture": 0.8846144948992575,
+  "n_cve": 38241,
+  "part_hors_perimetre": 0.0028684447940040252
+ },
+ "ecart": {
+  "precision": 0.09197725495117237,
+  "couverture": 0.3059288903282519,
+  "n_cve": 13225
+ },
+ "courbe_71_classes": [
+  {
+   "seuil": 0.08297133445739746,
+   "precision": 0.6401792789223455,
+   "couverture": 0.9341876980730528,
+   "n": 40384
+  },
+  {
+   "seuil": 0.49724715663628144,
+   "precision": 0.6850878143972247,
+   "couverture": 0.8535011219320363,
+   "n": 36896
+  },
+  {
+   "seuil": 0.6863092568787662,
+   "precision": 0.7241079980842912,
+   "couverture": 0.7728145457910199,
+   "n": 33408
+  },
+  {
+   "seuil": 0.8502708158709785,
+   "precision": 0.7658500718558872,
+   "couverture": 0.69215110226931,
+   "n": 29921
+  },
+  {
+   "seuil": 0.9457641157236967,
+   "precision": 0.8022547573109371,
+   "couverture": 0.6114645261282935,
+   "n": 26433
+  },
+  {
+   "seuil": 0.9803781793876127,
+   "precision": 0.8357376334713446,
+   "couverture": 0.530777949987277,
+   "n": 22945
+  },
+  {
+   "seuil": 0.9918508578430523,
+   "precision": 0.8659677253571796,
+   "couverture": 0.4501145064655671,
+   "n": 19458
+  },
+  {
+   "seuil": 0.9958903835578399,
+   "precision": 0.8881026925485285,
+   "couverture": 0.3694279303245506,
+   "n": 15970
+  },
+  {
+   "seuil": 0.997905124317516,
+   "precision": 0.9115597212208604,
+   "couverture": 0.28876448680284067,
+   "n": 12483
+  },
+  {
+   "seuil": 0.9988178139383143,
+   "precision": 0.9266259032795998,
+   "couverture": 0.20807791066182424,
+   "n": 8995
+  },
+  {
+   "seuil": 0.9993898868560791,
+   "precision": 0.9464512615719731,
+   "couverture": 0.12743759975942076,
+   "n": 5509
+  },
+  {
+   "seuil": 0.9998262524604797,
+   "precision": 0.9782285997031173,
+   "couverture": 0.04675102361840431,
+   "n": 2021
+  }
+ ],
+ "courbe_famille": [
+  {
+   "seuil": 0.2525847554206848,
+   "precision": 0.8796924357812768,
+   "couverture": 0.9446667746188901,
+   "n": 40837
+  },
+  {
+   "seuil": 0.7057877800681375,
+   "precision": 0.9161886893594211,
+   "couverture": 0.8630780263249208,
+   "n": 37310
+  },
+  {
+   "seuil": 0.9018318089571866,
+   "precision": 0.9402658141668887,
+   "couverture": 0.7814892780309515,
+   "n": 33783
+  },
+  {
+   "seuil": 0.969604725187475,
+   "precision": 0.9562731359069275,
+   "couverture": 0.6999005297369821,
+   "n": 30256
+  },
+  {
+   "seuil": 0.9878088550134139,
+   "precision": 0.9634867190422746,
+   "couverture": 0.6183349140623193,
+   "n": 26730
+  },
+  {
+   "seuil": 0.9941895820877769,
+   "precision": 0.967374908417015,
+   "couverture": 0.53674616576835,
+   "n": 23203
+  },
+  {
+   "seuil": 0.9970442143353548,
+   "precision": 0.9715897540150437,
+   "couverture": 0.4551574174743806,
+   "n": 19676
+  },
+  {
+   "seuil": 0.9982590393586592,
+   "precision": 0.97430181435383,
+   "couverture": 0.3735686691804113,
+   "n": 16149
+  },
+  {
+   "seuil": 0.9989368297836997,
+   "precision": 0.9785312524756397,
+   "couverture": 0.29200305350574846,
+   "n": 12623
+  },
+  {
+   "seuil": 0.9993338064713911,
+   "precision": 0.9821899736147758,
+   "couverture": 0.21041430521177912,
+   "n": 9096
+  },
+  {
+   "seuil": 0.9996616515246305,
+   "precision": 0.9876099838391094,
+   "couverture": 0.1288255569178098,
+   "n": 5569
+  },
+  {
+   "seuil": 0.9999127984046936,
+   "precision": 0.9926614481409002,
+   "couverture": 0.047283073862453444,
+   "n": 2044
+  }
+ ],
+ "detail_par_famille": [
+  {
+   "famille": "access-control",
+   "n_cve_reelles": 8056,
+   "n_nommees": 7455,
+   "precision": 0.8363514419852448
+  },
+  {
+   "famille": "autre",
+   "n_cve_reelles": 124,
+   "n_nommees": 0,
+   "precision": null
+  },
+  {
+   "famille": "calculation-error",
+   "n_cve_reelles": 402,
+   "n_nommees": 254,
+   "precision": 0.7165354330708661
+  },
+  {
+   "famille": "coding-standards",
+   "n_cve_reelles": 1257,
+   "n_nommees": 959,
+   "precision": 0.821689259645464
+  },
+  {
+   "famille": "control-flow",
+   "n_cve_reelles": 376,
+   "n_nommees": 184,
+   "precision": 0.5760869565217391
+  },
+  {
+   "famille": "exceptional-conditions",
+   "n_cve_reelles": 243,
+   "n_nommees": 0,
+   "precision": null
+  },
+  {
+   "famille": "incorrect-comparison",
+   "n_cve_reelles": 32,
+   "n_nommees": 0,
+   "precision": null
+  },
+  {
+   "famille": "interaction-error",
+   "n_cve_reelles": 65,
+   "n_nommees": 0,
+   "precision": null
+  },
+  {
+   "famille": "neutralization",
+   "n_cve_reelles": 14937,
+   "n_nommees": 13739,
+   "precision": 0.9767814251401121
+  },
+  {
+   "famille": "protection-failure",
+   "n_cve_reelles": 2766,
+   "n_nommees": 2249,
+   "precision": 0.9026233881725211
+  },
+  {
+   "famille": "resource-control",
+   "n_cve_reelles": 14971,
+   "n_nommees": 13401,
+   "precision": 0.891052906499515
+  }
+ ],
+ "provenance": "granularite_famille.py"
+}

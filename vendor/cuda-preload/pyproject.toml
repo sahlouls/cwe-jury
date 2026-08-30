@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cuda-preload"
+version = "0.1.0"
+description = "Précharge les libs CUDA des wheels nvidia-* (contourne le RUNPATH cassé de TensorFlow 2.21)"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cuda_preload"]
+
+# Le .pth est déposé à la racine du site-packages : Python l'exécute au
+# démarrage de l'interpréteur, quel que soit le lanceur (VS Code, jupyter,
+# python nu). C'est ce qui rend le correctif indépendant du kernelspec.
+[tool.hatch.build.targets.wheel.force-include]
+"zzz_cuda_preload.pth" = "zzz_cuda_preload.pth"

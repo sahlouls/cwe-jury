@@ -1,0 +1,17 @@
+{
+  "n": 4033,
+  "seuil": 0.8569,
+  "A_complet": {
+    "couverture": 0.9873543268038681,
+    "precision": 0.9786539427423405
+  },
+  "B_tronque_debut": {
+    "couverture": 0.6865856682370444,
+    "precision": 0.8248465149873601
+  },
+  "C_court_mais_dense": {
+    "couverture": 0.9851227374163154,
+    "precision": 0.97382330732444
+  },
+  "note": "C est le proxy pertinent pour un finding de scanner : court mais menant avec le type. B mesure surtout la suppression de l'information."
+}

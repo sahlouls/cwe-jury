@@ -1,0 +1,179 @@
+{
+ "cible": 0.9,
+ "n_train": 40000,
+ "note": "trois configurations a budget d'entrainement identique (40k), meme population de test 2025, meme protocole hors echantillon",
+ "A_71_classes_cible_fine": {
+  "seuil": 0.9729165434837341,
+  "precision": 0.7813655820138802,
+  "couverture": 0.5566402183719262,
+  "n_cve": 24063
+ },
+ "B_71_classes_relue_famille": {
+  "seuil": 0.6227830648422241,
+  "precision": 0.8922234099412079,
+  "couverture": 0.865622614448634,
+  "n_cve": 37420
+ },
+ "C_11_familles_entrainee": {
+  "seuil": 0.8569203019142151,
+  "precision": 0.8960208117650181,
+  "couverture": 0.8714289018945616,
+  "n_cve": 37671
+ },
+ "verdict_B_contre_C": {
+  "precision": 0.003797401823810276,
+  "couverture": 0.005806287445927594,
+  "n_cve": 251
+ },
+ "courbe_A": [
+  {
+   "precision": 0.5950953814012485,
+   "couverture": 0.9300932244558051
+  },
+  {
+   "precision": 0.6379376054881036,
+   "couverture": 0.8497536376043859
+  },
+  {
+   "precision": 0.6802056400697493,
+   "couverture": 0.7694371833722733
+  },
+  {
+   "precision": 0.7216422169257108,
+   "couverture": 0.689097596520854
+  },
+  {
+   "precision": 0.7587870957935935,
+   "couverture": 0.6087811422887414
+  },
+  {
+   "precision": 0.793740424600569,
+   "couverture": 0.5284646880566286
+  },
+  {
+   "precision": 0.8410076398926285,
+   "couverture": 0.4481251012052095
+  },
+  {
+   "precision": 0.8920754716981132,
+   "couverture": 0.3678086469730968
+  },
+  {
+   "precision": 0.9246057289990345,
+   "couverture": 0.2874921927409841
+  },
+  {
+   "precision": 0.9458403126744835,
+   "couverture": 0.20715260588956488
+  },
+  {
+   "precision": 0.9669948942377826,
+   "couverture": 0.12685928427675866
+  },
+  {
+   "precision": 0.9776341948310139,
+   "couverture": 0.046542830044645954
+  }
+ ],
+ "courbe_B": [
+  {
+   "precision": 0.8582089552238806,
+   "couverture": 0.9392306090818663
+  },
+  {
+   "precision": 0.8957541447634452,
+   "couverture": 0.8581045131740267
+  },
+  {
+   "precision": 0.9272083122450803,
+   "couverture": 0.7770015498854935
+  },
+  {
+   "precision": 0.9491722624825477,
+   "couverture": 0.6958754539776539
+  },
+  {
+   "precision": 0.9625225767609874,
+   "couverture": 0.6147724906891208
+  },
+  {
+   "precision": 0.9686158914560666,
+   "couverture": 0.5336463947812811
+  },
+  {
+   "precision": 0.9715790011756889,
+   "couverture": 0.45254343149274795
+  },
+  {
+   "precision": 0.9749626307922272,
+   "couverture": 0.3714173355849083
+  },
+  {
+   "precision": 0.9785674448251135,
+   "couverture": 0.2903375049156816
+  },
+  {
+   "precision": 0.9836373687119956,
+   "couverture": 0.20923454162714844
+  },
+  {
+   "precision": 0.9888026006862922,
+   "couverture": 0.12808531310000232
+  },
+  {
+   "precision": 0.9935992122107337,
+   "couverture": 0.046982349811469155
+  }
+ ],
+ "courbe_C": [
+  {
+   "precision": 0.8344398436234934,
+   "couverture": 1.0
+  },
+  {
+   "precision": 0.8762374984175212,
+   "couverture": 0.9136227995095885
+  },
+  {
+   "precision": 0.9142385772607796,
+   "couverture": 0.8272687316384835
+  },
+  {
+   "precision": 0.9423959536669893,
+   "couverture": 0.7409146637673784
+  },
+  {
+   "precision": 0.961373997243524,
+   "couverture": 0.6545837285155798
+  },
+  {
+   "precision": 0.9746356159921831,
+   "couverture": 0.5681833954058618
+  },
+  {
+   "precision": 0.9817090734517523,
+   "couverture": 0.48185246015406324
+  },
+  {
+   "precision": 0.9871892366188945,
+   "couverture": 0.39545212704434524
+  },
+  {
+   "precision": 0.9908696302948661,
+   "couverture": 0.3090980591732402
+  },
+  {
+   "precision": 0.9924187350711393,
+   "couverture": 0.22274399130213515
+  },
+  {
+   "precision": 0.994077834179357,
+   "couverture": 0.13671378010132088
+  },
+  {
+   "precision": 0.9921369102682701,
+   "couverture": 0.050012722940618565
+  }
+ ],
+ "provenance": "comparaison_granularite.py"
+}

@@ -1,0 +1,562 @@
+{
+  "run_id": "distilbert-base-uncased_finetune_71cl",
+  "cible": 0.9,
+  "balayage_cible_calibration": [
+    {
+      "cible_cal": 0.85,
+      "seuil": 0.8970648646354675,
+      "precision_test": 0.7392414037575328,
+      "couverture_test": 0.6525711906359157,
+      "n_cve": 28210
+    },
+    {
+      "cible_cal": 0.9,
+      "seuil": 0.9739844799041748,
+      "precision_test": 0.7830776305338406,
+      "couverture_test": 0.5533553864304055,
+      "n_cve": 23921
+    },
+    {
+      "cible_cal": 0.95,
+      "seuil": 0.9976109266281128,
+      "precision_test": 0.914242620124973,
+      "couverture_test": 0.32207545860417774,
+      "n_cve": 13923
+    },
+    {
+      "cible_cal": 0.97,
+      "seuil": 0.9996836185455322,
+      "precision_test": 0.9780987884436161,
+      "couverture_test": 0.04964260103171482,
+      "n_cve": 2146
+    },
+    {
+      "cible_cal": 0.98,
+      "seuil": 0.9998645782470703,
+      "precision_test": 0.9789227166276346,
+      "couverture_test": 0.0098776284438687,
+      "n_cve": 427
+    },
+    {
+      "cible_cal": 0.99,
+      "seuil": 0.9998741149902344,
+      "precision_test": 0.9827089337175793,
+      "couverture_test": 0.008027018899349973,
+      "n_cve": 347
+    },
+    {
+      "cible_cal": 0.995,
+      "seuil": 0.9998961687088013,
+      "precision_test": 0.9933333333333333,
+      "couverture_test": 0.003469892895972611,
+      "n_cve": 150
+    }
+  ],
+  "contrat_hors_echantillon": {
+    "cible_cal": 0.95,
+    "seuil": 0.9976109266281128,
+    "precision": 0.914242620124973,
+    "couverture": 0.32207545860417774,
+    "n_cve": 13923
+  },
+  "annee_calibration": 2024,
+  "annee_test": 2025,
+  "min_support": 30,
+  "global": {
+    "seuil": 0.9739844799041748,
+    "precision": 0.7830776305338406,
+    "couverture": 0.5533553864304055,
+    "n_cve": 23921
+  },
+  "par_classe": {
+    "precision": 0.824771046574269,
+    "couverture": 0.4723449536190983,
+    "n_cve": 20419,
+    "n_classes_activables": 30,
+    "seuils": {
+      "CWE-119": 1.01,
+      "CWE-120": 1.01,
+      "CWE-121": 0.9986458420753479,
+      "CWE-122": 0.9924644231796265,
+      "CWE-125": 0.8114657998085022,
+      "CWE-134": 1.01,
+      "CWE-189": 1.01,
+      "CWE-190": 0.993249773979187,
+      "CWE-20": 0.9825863838195801,
+      "CWE-200": 1.01,
+      "CWE-203": 1.01,
+      "CWE-209": 0.9318094253540039,
+      "CWE-22": 1.01,
+      "CWE-255": 1.01,
+      "CWE-264": 1.01,
+      "CWE-266": 0.6288790702819824,
+      "CWE-269": 1.01,
+      "CWE-276": 0.9978352189064026,
+      "CWE-284": 1.01,
+      "CWE-285": 1.01,
+      "CWE-287": 1.01,
+      "CWE-290": 1.01,
+      "CWE-295": 0.9977916479110718,
+      "CWE-306": 0.9843984842300415,
+      "CWE-310": 1.01,
+      "CWE-312": 1.01,
+      "CWE-319": 1.01,
+      "CWE-327": 1.01,
+      "CWE-347": 1.01,
+      "CWE-352": 0.1837872713804245,
+      "CWE-362": 1.01,
+      "CWE-367": 1.01,
+      "CWE-399": 1.01,
+      "CWE-400": 1.01,
+      "CWE-401": 0.9954423904418945,
+      "CWE-404": 0.9313713312149048,
+      "CWE-415": 0.7753716111183167,
+      "CWE-416": 0.3636794686317444,
+      "CWE-426": 1.01,
+      "CWE-427": 0.9450653791427612,
+      "CWE-434": 0.9983483552932739,
+      "CWE-476": 0.8075035810470581,
+      "CWE-502": 0.7486918568611145,
+      "CWE-522": 1.01,
+      "CWE-532": 0.9978058934211731,
+      "CWE-59": 1.01,
+      "CWE-601": 0.917397677898407,
+      "CWE-611": 1.01,
+      "CWE-617": 0.9941374063491821,
+      "CWE-639": 1.01,
+      "CWE-667": 0.9844264388084412,
+      "CWE-668": 1.01,
+      "CWE-732": 1.01,
+      "CWE-74": 1.01,
+      "CWE-77": 1.01,
+      "CWE-770": 1.01,
+      "CWE-772": 1.01,
+      "CWE-78": 1.01,
+      "CWE-787": 0.9957283139228821,
+      "CWE-79": 0.18160131573677063,
+      "CWE-798": 1.01,
+      "CWE-835": 1.01,
+      "CWE-843": 0.9896835088729858,
+      "CWE-862": 0.7334230542182922,
+      "CWE-863": 1.01,
+      "CWE-89": 0.34758055210113525,
+      "CWE-908": 1.01,
+      "CWE-918": 0.2228299230337143,
+      "CWE-94": 0.9866327047348022,
+      "CWE-98": 1.01
+    }
+  },
+  "details": [
+    {
+      "classe": "CWE-119",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-120",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.89)"
+    },
+    {
+      "classe": "CWE-121",
+      "seuil": 0.9986458420753479,
+      "n_cal": 437,
+      "accept_cal": 30,
+      "prec_cal": 0.9
+    },
+    {
+      "classe": "CWE-122",
+      "seuil": 0.9924644231796265,
+      "n_cal": 425,
+      "accept_cal": 90,
+      "prec_cal": 0.9
+    },
+    {
+      "classe": "CWE-125",
+      "seuil": 0.8114657998085022,
+      "n_cal": 906,
+      "accept_cal": 706,
+      "prec_cal": 0.9008498583569405
+    },
+    {
+      "classe": "CWE-134",
+      "seuil": null,
+      "raison": "support insuffisant (27)"
+    },
+    {
+      "classe": "CWE-189",
+      "seuil": null,
+      "raison": "support insuffisant (10)"
+    },
+    {
+      "classe": "CWE-190",
+      "seuil": 0.993249773979187,
+      "n_cal": 220,
+      "accept_cal": 105,
+      "prec_cal": 0.9047619047619048
+    },
+    {
+      "classe": "CWE-20",
+      "seuil": 0.9825863838195801,
+      "n_cal": 1021,
+      "accept_cal": 62,
+      "prec_cal": 0.9032258064516129
+    },
+    {
+      "classe": "CWE-200",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.80)"
+    },
+    {
+      "classe": "CWE-203",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-209",
+      "seuil": 0.9318094253540039,
+      "n_cal": 80,
+      "accept_cal": 51,
+      "prec_cal": 0.9019607843137255
+    },
+    {
+      "classe": "CWE-22",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-255",
+      "seuil": null,
+      "raison": "support insuffisant (25)"
+    },
+    {
+      "classe": "CWE-264",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.00)"
+    },
+    {
+      "classe": "CWE-266",
+      "seuil": 0.6288790702819824,
+      "n_cal": 58,
+      "accept_cal": 52,
+      "prec_cal": 0.9038461538461539
+    },
+    {
+      "classe": "CWE-269",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-276",
+      "seuil": 0.9978352189064026,
+      "n_cal": 231,
+      "accept_cal": 44,
+      "prec_cal": 0.9090909090909091
+    },
+    {
+      "classe": "CWE-284",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-285",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.71)"
+    },
+    {
+      "classe": "CWE-287",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-290",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-295",
+      "seuil": 0.9977916479110718,
+      "n_cal": 138,
+      "accept_cal": 47,
+      "prec_cal": 0.9148936170212766
+    },
+    {
+      "classe": "CWE-306",
+      "seuil": 0.9843984842300415,
+      "n_cal": 155,
+      "accept_cal": 43,
+      "prec_cal": 0.9069767441860465
+    },
+    {
+      "classe": "CWE-310",
+      "seuil": null,
+      "raison": "support insuffisant (17)"
+    },
+    {
+      "classe": "CWE-312",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-319",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-327",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-347",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-352",
+      "seuil": 0.1837872713804245,
+      "n_cal": 1499,
+      "accept_cal": 1499,
+      "prec_cal": 0.9566377585056705
+    },
+    {
+      "classe": "CWE-362",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-367",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-399",
+      "seuil": null,
+      "raison": "support insuffisant (24)"
+    },
+    {
+      "classe": "CWE-400",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-401",
+      "seuil": 0.9954423904418945,
+      "n_cal": 298,
+      "accept_cal": 52,
+      "prec_cal": 0.9038461538461539
+    },
+    {
+      "classe": "CWE-404",
+      "seuil": 0.9313713312149048,
+      "n_cal": 230,
+      "accept_cal": 35,
+      "prec_cal": 0.9142857142857143
+    },
+    {
+      "classe": "CWE-415",
+      "seuil": 0.7753716111183167,
+      "n_cal": 110,
+      "accept_cal": 74,
+      "prec_cal": 0.9054054054054054
+    },
+    {
+      "classe": "CWE-416",
+      "seuil": 0.3636794686317444,
+      "n_cal": 705,
+      "accept_cal": 683,
+      "prec_cal": 0.9004392386530015
+    },
+    {
+      "classe": "CWE-426",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-427",
+      "seuil": 0.9450653791427612,
+      "n_cal": 204,
+      "accept_cal": 153,
+      "prec_cal": 0.9019607843137255
+    },
+    {
+      "classe": "CWE-434",
+      "seuil": 0.9983483552932739,
+      "n_cal": 878,
+      "accept_cal": 252,
+      "prec_cal": 0.9007936507936508
+    },
+    {
+      "classe": "CWE-476",
+      "seuil": 0.8075035810470581,
+      "n_cal": 1022,
+      "accept_cal": 781,
+      "prec_cal": 0.9001280409731114
+    },
+    {
+      "classe": "CWE-502",
+      "seuil": 0.7486918568611145,
+      "n_cal": 509,
+      "accept_cal": 437,
+      "prec_cal": 0.9016018306636155
+    },
+    {
+      "classe": "CWE-522",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-532",
+      "seuil": 0.9978058934211731,
+      "n_cal": 188,
+      "accept_cal": 54,
+      "prec_cal": 0.9074074074074074
+    },
+    {
+      "classe": "CWE-59",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-601",
+      "seuil": 0.917397677898407,
+      "n_cal": 202,
+      "accept_cal": 158,
+      "prec_cal": 0.9050632911392406
+    },
+    {
+      "classe": "CWE-611",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-617",
+      "seuil": 0.9941374063491821,
+      "n_cal": 121,
+      "accept_cal": 30,
+      "prec_cal": 0.9
+    },
+    {
+      "classe": "CWE-639",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-667",
+      "seuil": 0.9844264388084412,
+      "n_cal": 213,
+      "accept_cal": 123,
+      "prec_cal": 0.9024390243902439
+    },
+    {
+      "classe": "CWE-668",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-732",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-74",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.60)"
+    },
+    {
+      "classe": "CWE-77",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.61)"
+    },
+    {
+      "classe": "CWE-770",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-772",
+      "seuil": null,
+      "raison": "support insuffisant (24)"
+    },
+    {
+      "classe": "CWE-78",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.88)"
+    },
+    {
+      "classe": "CWE-787",
+      "seuil": 0.9957283139228821,
+      "n_cal": 1129,
+      "accept_cal": 131,
+      "prec_cal": 0.9007633587786259
+    },
+    {
+      "classe": "CWE-79",
+      "seuil": 0.18160131573677063,
+      "n_cal": 7737,
+      "accept_cal": 7737,
+      "prec_cal": 0.9732454439705313
+    },
+    {
+      "classe": "CWE-798",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.71)"
+    },
+    {
+      "classe": "CWE-835",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-843",
+      "seuil": 0.9896835088729858,
+      "n_cal": 93,
+      "accept_cal": 65,
+      "prec_cal": 0.9076923076923077
+    },
+    {
+      "classe": "CWE-862",
+      "seuil": 0.7334230542182922,
+      "n_cal": 1521,
+      "accept_cal": 1290,
+      "prec_cal": 0.9
+    },
+    {
+      "classe": "CWE-863",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-89",
+      "seuil": 0.34758055210113525,
+      "n_cal": 2816,
+      "accept_cal": 2816,
+      "prec_cal": 0.91015625
+    },
+    {
+      "classe": "CWE-908",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.68)"
+    },
+    {
+      "classe": "CWE-918",
+      "seuil": 0.2228299230337143,
+      "n_cal": 382,
+      "accept_cal": 380,
+      "prec_cal": 0.9
+    },
+    {
+      "classe": "CWE-94",
+      "seuil": 0.9866327047348022,
+      "n_cal": 657,
+      "accept_cal": 52,
+      "prec_cal": 0.9038461538461539
+    },
+    {
+      "classe": "CWE-98",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.67)"
+    }
+  ],
+  "provenance": "seuils_par_classe.py"
+}

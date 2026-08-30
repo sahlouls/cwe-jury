@@ -1,0 +1,21 @@
+# docker-compose -- demo de deploiement CVE -> CWE (api + front).
+# Tout lancer :   docker compose up --build   (front: http://localhost:5174, api: :8001)
+# NB : l'image API embarque TensorFlow + les poids (~1,3 Go) -> build long.
+#      Pour une DEMO LIVE rapide, preferer le mode local (voir docs/lancer-demo.md).
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+
+  front:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: "http://localhost:8001"
+    ports:
+      - "5174:80"
+    depends_on:
+      - api

@@ -1,0 +1,26 @@
+{
+  "run_id": "distilbert-base-uncased_finetune_71cl",
+  "cible": 0.9,
+  "auc_detecteur": {
+    "cal": 0.8561666915392363,
+    "test": 0.8586737917347336
+  },
+  "annee_calibration": 2024,
+  "annee_test": 2025,
+  "resultats": {
+    "classifieur_seul": {
+      "seuil_conf": 0.975,
+      "precision": 0.7837905970337381,
+      "couverture": 0.5505794721136275,
+      "n_cve": 23801
+    },
+    "cascade": {
+      "seuil_conf": 0.965,
+      "seuil_detecteur": 0.3,
+      "precision": 0.7813486131871782,
+      "couverture": 0.5571260033773624,
+      "n_cve": 24084
+    }
+  },
+  "provenance": "detecteur_hors_perimetre.py"
+}

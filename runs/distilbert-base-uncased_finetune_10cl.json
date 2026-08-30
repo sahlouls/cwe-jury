@@ -1,0 +1,74 @@
+{
+  "run_id": "distilbert-base-uncased_finetune_10cl",
+  "config": {
+    "model_name": "distilbert-base-uncased",
+    "mode": "finetune",
+    "num_classes": 10,
+    "classes": [
+      "CWE-22",
+      "CWE-352",
+      "CWE-416",
+      "CWE-434",
+      "CWE-476",
+      "CWE-78",
+      "CWE-787",
+      "CWE-79",
+      "CWE-862",
+      "CWE-89"
+    ],
+    "data_dir": "data/cwe",
+    "batch_size": 16,
+    "max_length": 192,
+    "learning_rate": 2e-05,
+    "epochs_max": 10,
+    "epochs_effectuees": 4,
+    "patience_earlystopping": 2,
+    "patience_reduce_lr": 2,
+    "class_weight_max": 10.0,
+    "n_train": 40000,
+    "n_val": 3000,
+    "n_test": 17747,
+    "seed": 42,
+    "mixed_precision": "mixed_float16",
+    "checkpoint": "best_distilbert-base-uncased_finetune_10cl.weights.h5"
+  },
+  "validation": {
+    "best_epoch": 2,
+    "best_f1_macro": 0.9291804886336934
+  },
+  "test": {
+    "accuracy": 0.9691215416690144,
+    "precision_macro": 0.944620367054308,
+    "recall_macro": 0.9493873791992578,
+    "f1_macro": 0.9468139798482202,
+    "precision_weighted": 0.9694672213005578,
+    "recall_weighted": 0.9691215416690144,
+    "f1_weighted": 0.9692115597793579,
+    "loss": 0.12025275826454163
+  },
+  "baselines": {
+    "majority": {
+      "accuracy": 0.42677635656730717,
+      "f1_macro": 0.05982386161683978
+    },
+    "tfidf_logreg": {
+      "accuracy": 0.9650645179466952,
+      "f1_macro": 0.9391123681561403,
+      "f1_weighted": 0.9652365631618823,
+      "n_features": 50000,
+      "train_seconds": 18.1
+    }
+  },
+  "seuil": {
+    "valeur": 0.9,
+    "precision_dans_perimetre": 0.9904744787922358,
+    "taux_reponse_dans_perimetre": 0.940553332957683,
+    "faux_enrichissement_hors_perimetre": 0.4526,
+    "faux_enrichissement_severe": 0.1112076520221123,
+    "bucket_other": false,
+    "recall_other_sur_hors_perimetre": 0.0,
+    "precision_enrichissement_estimee": 0.0,
+    "part_hors_perimetre_annee_test": 0.5894654051678272
+  },
+  "provenance": "notebook"
+}

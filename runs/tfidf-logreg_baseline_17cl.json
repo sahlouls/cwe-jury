@@ -1,0 +1,46 @@
+{
+  "run_id": "tfidf-logreg_baseline_17cl",
+  "config": {
+    "model_name": "tfidf+logreg",
+    "mode": "baseline_classique",
+    "num_classes": 17,
+    "classes": [
+      "CWE-119",
+      "CWE-125",
+      "CWE-190",
+      "CWE-20",
+      "CWE-22",
+      "CWE-269",
+      "CWE-287",
+      "CWE-352",
+      "CWE-416",
+      "CWE-434",
+      "CWE-476",
+      "CWE-78",
+      "CWE-787",
+      "CWE-79",
+      "CWE-862",
+      "CWE-89",
+      "CWE-94"
+    ],
+    "vectorizer": "TfidfVectorizer(max_features=50000, ngram_range=(1,2), sublinear_tf, min_df=2)",
+    "n_features": 50000,
+    "n_train": 40000,
+    "n_test": 21951,
+    "seed": 42,
+    "data_dir": "/tmp/claude-1000/-home-sahlouls-repos-alyra-cwe-finetuning/f330426c-bb2f-4c83-842d-590df6d14bd5/scratchpad/d17"
+  },
+  "test": {
+    "accuracy": 0.8806888068880688,
+    "f1_macro": 0.7908653703340631,
+    "f1_weighted": 0.8816149929773799
+  },
+  "baselines": {
+    "majority": {
+      "accuracy": 0.34504122819005967,
+      "f1_macro": 0.03017980774020023
+    }
+  },
+  "train_seconds": 24.4,
+  "provenance": "baseline_tfidf.py"
+}

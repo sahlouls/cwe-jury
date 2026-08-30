@@ -1,0 +1,31 @@
+{
+  "run_id": "SecureBERT_finetune_17cl",
+  "config": {
+    "model_name": "ehsanaghaei/SecureBERT",
+    "mode": "finetune",
+    "num_classes": 17,
+    "classes": null,
+    "batch_size": 8,
+    "max_length": 192,
+    "learning_rate": 2e-05,
+    "epochs_max": 5,
+    "epochs_effectuees": null,
+    "n_train": 40000,
+    "n_val": 3000,
+    "n_test": null,
+    "seed": null,
+    "mixed_precision": "mixed_float16"
+  },
+  "validation": {
+    "best_epoch": null,
+    "best_f1_macro": null
+  },
+  "test": {
+    "accuracy": 0.894,
+    "f1_macro": 0.805
+  },
+  "baselines": {},
+  "seuil": {},
+  "provenance": "manual",
+  "note": "Chiffres transcrits depuis docs/cwe-cadrage.md (releve manuel, sessions du 30-31/07/2026). Config partiellement inconnue (champs null) : a re-jouer pour certifier."
+}

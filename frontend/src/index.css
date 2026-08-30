@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+/* Jetons de theme (memes couleurs que le deck de soutenance) */
+@theme {
+  --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --font-display: 'Archivo', sans-serif;
+
+  --color-ink: #161b26;
+  --color-muted: #5b6675;
+  --color-faint: #8b96a6;
+  --color-ground: #f4f6f9;
+  --color-border: #e2e7ee;
+
+  --color-pep: #4c5fd0;
+  --color-pep-soft: #e7eafb;
+  --color-epss: #c9781f;
+  --color-epss-soft: #fbeedd;
+  --color-good: #1f8a55;
+}
+
+body {
+  background: var(--color-ground);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}

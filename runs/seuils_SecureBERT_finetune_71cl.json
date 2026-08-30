@@ -1,0 +1,556 @@
+{
+  "run_id": "SecureBERT_finetune_71cl",
+  "cible": 0.9,
+  "balayage_cible_calibration": [
+    {
+      "cible_cal": 0.85,
+      "seuil": 0.9046849608421326,
+      "precision_test": 0.7468407021431291,
+      "couverture_test": 0.6681394434291795,
+      "n_cve": 28883
+    },
+    {
+      "cible_cal": 0.9,
+      "seuil": 0.9819175601005554,
+      "precision_test": 0.7871039944903582,
+      "couverture_test": 0.537417011728238,
+      "n_cve": 23232
+    },
+    {
+      "cible_cal": 0.95,
+      "seuil": 0.9990189075469971,
+      "precision_test": 0.9199846370503136,
+      "couverture_test": 0.18068888940294708,
+      "n_cve": 7811
+    },
+    {
+      "cible_cal": 0.97,
+      "seuil": 0.999879002571106,
+      "precision_test": 0.9495016611295681,
+      "couverture_test": 0.03481459205625853,
+      "n_cve": 1505
+    },
+    {
+      "cible_cal": 0.98,
+      "seuil": 0.9999659061431885,
+      "precision_test": 0.9230769230769231,
+      "couverture_test": 0.00030072405098429295,
+      "n_cve": 13
+    },
+    {
+      "cible_cal": 0.99,
+      "seuil": 0.9999659061431885,
+      "precision_test": 0.9230769230769231,
+      "couverture_test": 0.00030072405098429295,
+      "n_cve": 13
+    },
+    {
+      "cible_cal": 0.995,
+      "seuil": 0.9999659061431885,
+      "precision_test": 0.9230769230769231,
+      "couverture_test": 0.00030072405098429295,
+      "n_cve": 13
+    }
+  ],
+  "contrat_hors_echantillon": {
+    "cible_cal": 0.95,
+    "seuil": 0.9990189075469971,
+    "precision": 0.9199846370503136,
+    "couverture": 0.18068888940294708,
+    "n_cve": 7811
+  },
+  "annee_calibration": 2024,
+  "annee_test": 2025,
+  "min_support": 30,
+  "global": {
+    "seuil": 0.9819175601005554,
+    "precision": 0.7871039944903582,
+    "couverture": 0.537417011728238,
+    "n_cve": 23232
+  },
+  "par_classe": {
+    "precision": 0.8170639065615801,
+    "couverture": 0.48721922783316757,
+    "n_cve": 21062,
+    "n_classes_activables": 27,
+    "seuils": {
+      "CWE-119": 1.01,
+      "CWE-120": 1.01,
+      "CWE-121": 0.7916063070297241,
+      "CWE-122": 0.9431638717651367,
+      "CWE-125": 0.9288673996925354,
+      "CWE-134": 1.01,
+      "CWE-189": 1.01,
+      "CWE-190": 0.968795657157898,
+      "CWE-20": 1.01,
+      "CWE-200": 1.01,
+      "CWE-203": 1.01,
+      "CWE-209": 0.9654217958450317,
+      "CWE-22": 0.9982798099517822,
+      "CWE-255": 1.01,
+      "CWE-264": 1.01,
+      "CWE-266": 0.8301453590393066,
+      "CWE-269": 1.01,
+      "CWE-276": 0.9827082753181458,
+      "CWE-284": 1.01,
+      "CWE-285": 1.01,
+      "CWE-287": 1.01,
+      "CWE-290": 1.01,
+      "CWE-295": 0.9997140765190125,
+      "CWE-306": 1.01,
+      "CWE-310": 1.01,
+      "CWE-312": 1.01,
+      "CWE-319": 1.01,
+      "CWE-327": 1.01,
+      "CWE-347": 1.01,
+      "CWE-352": 0.09456996619701385,
+      "CWE-362": 1.01,
+      "CWE-367": 0.9957311749458313,
+      "CWE-399": 1.01,
+      "CWE-400": 1.01,
+      "CWE-401": 1.01,
+      "CWE-404": 0.9974942207336426,
+      "CWE-415": 0.9529582262039185,
+      "CWE-416": 0.45195239782333374,
+      "CWE-426": 1.01,
+      "CWE-427": 0.9783229827880859,
+      "CWE-434": 0.9971795082092285,
+      "CWE-476": 0.8974024653434753,
+      "CWE-502": 0.41958490014076233,
+      "CWE-522": 1.01,
+      "CWE-532": 1.01,
+      "CWE-59": 1.01,
+      "CWE-601": 0.9897029995918274,
+      "CWE-611": 0.9988043308258057,
+      "CWE-617": 1.01,
+      "CWE-639": 1.01,
+      "CWE-667": 0.9632834792137146,
+      "CWE-668": 1.01,
+      "CWE-732": 1.01,
+      "CWE-74": 1.01,
+      "CWE-77": 1.01,
+      "CWE-770": 1.01,
+      "CWE-772": 1.01,
+      "CWE-78": 1.01,
+      "CWE-787": 1.01,
+      "CWE-79": 0.2487052083015442,
+      "CWE-798": 1.01,
+      "CWE-835": 1.01,
+      "CWE-843": 0.9547284841537476,
+      "CWE-862": 0.8698803186416626,
+      "CWE-863": 1.01,
+      "CWE-89": 0.32128283381462097,
+      "CWE-908": 1.01,
+      "CWE-918": 0.6444127559661865,
+      "CWE-94": 0.957972526550293,
+      "CWE-98": 1.01
+    }
+  },
+  "details": [
+    {
+      "classe": "CWE-119",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-120",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.80)"
+    },
+    {
+      "classe": "CWE-121",
+      "seuil": 0.7916063070297241,
+      "n_cal": 433,
+      "accept_cal": 302,
+      "prec_cal": 0.9006622516556292
+    },
+    {
+      "classe": "CWE-122",
+      "seuil": 0.9431638717651367,
+      "n_cal": 473,
+      "accept_cal": 102,
+      "prec_cal": 0.9019607843137255
+    },
+    {
+      "classe": "CWE-125",
+      "seuil": 0.9288673996925354,
+      "n_cal": 950,
+      "accept_cal": 684,
+      "prec_cal": 0.9005847953216374
+    },
+    {
+      "classe": "CWE-134",
+      "seuil": null,
+      "raison": "support insuffisant (23)"
+    },
+    {
+      "classe": "CWE-189",
+      "seuil": null,
+      "raison": "support insuffisant (12)"
+    },
+    {
+      "classe": "CWE-190",
+      "seuil": 0.968795657157898,
+      "n_cal": 211,
+      "accept_cal": 120,
+      "prec_cal": 0.9
+    },
+    {
+      "classe": "CWE-20",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-200",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-203",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.75)"
+    },
+    {
+      "classe": "CWE-209",
+      "seuil": 0.9654217958450317,
+      "n_cal": 85,
+      "accept_cal": 53,
+      "prec_cal": 0.9056603773584906
+    },
+    {
+      "classe": "CWE-22",
+      "seuil": 0.9982798099517822,
+      "n_cal": 1084,
+      "accept_cal": 280,
+      "prec_cal": 0.9
+    },
+    {
+      "classe": "CWE-255",
+      "seuil": null,
+      "raison": "support insuffisant (15)"
+    },
+    {
+      "classe": "CWE-264",
+      "seuil": null,
+      "raison": "support insuffisant (28)"
+    },
+    {
+      "classe": "CWE-266",
+      "seuil": 0.8301453590393066,
+      "n_cal": 72,
+      "accept_cal": 43,
+      "prec_cal": 0.9069767441860465
+    },
+    {
+      "classe": "CWE-269",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.75)"
+    },
+    {
+      "classe": "CWE-276",
+      "seuil": 0.9827082753181458,
+      "n_cal": 208,
+      "accept_cal": 53,
+      "prec_cal": 0.9056603773584906
+    },
+    {
+      "classe": "CWE-284",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-285",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-287",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-290",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-295",
+      "seuil": 0.9997140765190125,
+      "n_cal": 185,
+      "accept_cal": 30,
+      "prec_cal": 0.9
+    },
+    {
+      "classe": "CWE-306",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.83)"
+    },
+    {
+      "classe": "CWE-310",
+      "seuil": null,
+      "raison": "support insuffisant (8)"
+    },
+    {
+      "classe": "CWE-312",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.71)"
+    },
+    {
+      "classe": "CWE-319",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.82)"
+    },
+    {
+      "classe": "CWE-327",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-347",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-352",
+      "seuil": 0.09456996619701385,
+      "n_cal": 1541,
+      "accept_cal": 1541,
+      "prec_cal": 0.9344581440622972
+    },
+    {
+      "classe": "CWE-362",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.90)"
+    },
+    {
+      "classe": "CWE-367",
+      "seuil": 0.9957311749458313,
+      "n_cal": 73,
+      "accept_cal": 36,
+      "prec_cal": 0.9166666666666666
+    },
+    {
+      "classe": "CWE-399",
+      "seuil": null,
+      "raison": "support insuffisant (6)"
+    },
+    {
+      "classe": "CWE-400",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-401",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-404",
+      "seuil": 0.9974942207336426,
+      "n_cal": 273,
+      "accept_cal": 36,
+      "prec_cal": 0.9166666666666666
+    },
+    {
+      "classe": "CWE-415",
+      "seuil": 0.9529582262039185,
+      "n_cal": 88,
+      "accept_cal": 76,
+      "prec_cal": 0.9078947368421053
+    },
+    {
+      "classe": "CWE-416",
+      "seuil": 0.45195239782333374,
+      "n_cal": 781,
+      "accept_cal": 741,
+      "prec_cal": 0.9001349527665317
+    },
+    {
+      "classe": "CWE-426",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-427",
+      "seuil": 0.9783229827880859,
+      "n_cal": 216,
+      "accept_cal": 154,
+      "prec_cal": 0.9025974025974026
+    },
+    {
+      "classe": "CWE-434",
+      "seuil": 0.9971795082092285,
+      "n_cal": 844,
+      "accept_cal": 442,
+      "prec_cal": 0.9004524886877828
+    },
+    {
+      "classe": "CWE-476",
+      "seuil": 0.8974024653434753,
+      "n_cal": 1067,
+      "accept_cal": 761,
+      "prec_cal": 0.900131406044678
+    },
+    {
+      "classe": "CWE-502",
+      "seuil": 0.41958490014076233,
+      "n_cal": 439,
+      "accept_cal": 436,
+      "prec_cal": 0.9013761467889908
+    },
+    {
+      "classe": "CWE-522",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.75)"
+    },
+    {
+      "classe": "CWE-532",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-59",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.59)"
+    },
+    {
+      "classe": "CWE-601",
+      "seuil": 0.9897029995918274,
+      "n_cal": 258,
+      "accept_cal": 153,
+      "prec_cal": 0.9019607843137255
+    },
+    {
+      "classe": "CWE-611",
+      "seuil": 0.9988043308258057,
+      "n_cal": 109,
+      "accept_cal": 40,
+      "prec_cal": 0.9
+    },
+    {
+      "classe": "CWE-617",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-639",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-667",
+      "seuil": 0.9632834792137146,
+      "n_cal": 254,
+      "accept_cal": 147,
+      "prec_cal": 0.9047619047619048
+    },
+    {
+      "classe": "CWE-668",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.67)"
+    },
+    {
+      "classe": "CWE-732",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.86)"
+    },
+    {
+      "classe": "CWE-74",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.31)"
+    },
+    {
+      "classe": "CWE-77",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.67)"
+    },
+    {
+      "classe": "CWE-770",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.55)"
+    },
+    {
+      "classe": "CWE-772",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-78",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-787",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.65)"
+    },
+    {
+      "classe": "CWE-79",
+      "seuil": 0.2487052083015442,
+      "n_cal": 7764,
+      "accept_cal": 7764,
+      "prec_cal": 0.9743688820195775
+    },
+    {
+      "classe": "CWE-798",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.74)"
+    },
+    {
+      "classe": "CWE-835",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-843",
+      "seuil": 0.9547284841537476,
+      "n_cal": 91,
+      "accept_cal": 65,
+      "prec_cal": 0.9076923076923077
+    },
+    {
+      "classe": "CWE-862",
+      "seuil": 0.8698803186416626,
+      "n_cal": 1538,
+      "accept_cal": 1295,
+      "prec_cal": 0.9003861003861003
+    },
+    {
+      "classe": "CWE-863",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-89",
+      "seuil": 0.32128283381462097,
+      "n_cal": 2823,
+      "accept_cal": 2823,
+      "prec_cal": 0.9089620970598654
+    },
+    {
+      "classe": "CWE-908",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 1.00)"
+    },
+    {
+      "classe": "CWE-918",
+      "seuil": 0.6444127559661865,
+      "n_cal": 406,
+      "accept_cal": 384,
+      "prec_cal": 0.9010416666666666
+    },
+    {
+      "classe": "CWE-94",
+      "seuil": 0.957972526550293,
+      "n_cal": 586,
+      "accept_cal": 60,
+      "prec_cal": 0.9
+    },
+    {
+      "classe": "CWE-98",
+      "seuil": null,
+      "raison": "n'atteint jamais 90% (prec max 0.75)"
+    }
+  ],
+  "provenance": "seuils_par_classe.py"
+}

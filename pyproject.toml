@@ -1,0 +1,39 @@
+[project]
+name = "cwe-finetuning"
+version = "0.1.0"
+description = "Sujet 2 Alyra : CVE -> CWE par fine-tuning de transformer (TensorFlow/Keras). Lit les donnees de ../cyber_cve/data/cwe."
+requires-python = ">=3.12"
+dependencies = [
+    # --- notebook / VS Code ---
+    "ipykernel>=7.3.0",
+    "ipywidgets>=8.1.8",
+    # --- ML / deep learning (versions BORNEES, recette eprouvee du projet bert) ---
+    "tensorflow[and-cuda]>=2.19,<2.22",  # extra and-cuda = wheels CUDA (~4 Go)
+    "tf-keras>=2.21.0",                  # transformers TF incompatible Keras 3
+    "transformers>=4.49,<4.50",          # >=4.50 casse TFAutoModel ; v5 retire TF
+    "cuda-preload",                      # correctif GPU (voir vendor/ + README)
+    # --- donnees / viz ---
+    "polars>=1.0",                       # lecture des parquet de cyber_cve
+    "pyarrow>=15",
+    "pandas>=2.0",
+    "numpy<3",
+    "scikit-learn>=1.4",                 # class_weight, f1_score, classification_report
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "torch>=2.13.0",
+    "nbconvert>=7.17.1",
+    "fastapi>=0.141.1",
+    "uvicorn[standard]>=0.52.4",
+]
+
+# SecureBERT n'a que des poids PyTorch -> conversion via from_pt=True (torch requis).
+# Optionnel : uv add torch --index https://download.pytorch.org/whl/cpu
+
+[tool.uv.workspace]
+members = ["vendor/cuda-preload"]
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/cpu"
+
+[tool.uv.sources]
+cuda-preload = { workspace = true }

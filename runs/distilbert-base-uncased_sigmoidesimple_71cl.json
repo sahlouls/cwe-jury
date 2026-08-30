@@ -1,0 +1,27 @@
+{
+  "run_id": "distilbert-base-uncased_sigmoidesimple_71cl",
+  "config": {
+    "model_name": "distilbert-base-uncased",
+    "mode": "sigmoide-simple",
+    "variante": "sigmoide-simple",
+    "num_classes": 71,
+    "n_train": 40000,
+    "n_val": 10650,
+    "n_test": 43229,
+    "seed": 42,
+    "epochs_effectuees": 9,
+    "poids_max": 10.0,
+    "liens_hierarchiques": 80,
+    "n_sorties": 71,
+    "etiquettes_par_cve": 1.0,
+    "checkpoint": "best_distilbert-base-uncased_sigmoidesimple_71cl.weights.h5"
+  },
+  "validation": {
+    "best_f1_exact": 0.49497505324993335
+  },
+  "test": {
+    "accuracy": 0.6023040088829258,
+    "f1_macro": 0.46166593847013637
+  },
+  "provenance": "entrainement_hierarchique.py"
+}

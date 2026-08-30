@@ -1,0 +1,42 @@
+{
+  "run_id": "distilbert-base-uncased_frozen_10cl",
+  "config": {
+    "model_name": "distilbert-base-uncased",
+    "mode": "feature_extraction",
+    "num_classes": 10,
+    "classes": [
+      "CWE-22",
+      "CWE-352",
+      "CWE-416",
+      "CWE-434",
+      "CWE-476",
+      "CWE-78",
+      "CWE-787",
+      "CWE-79",
+      "CWE-862",
+      "CWE-89"
+    ],
+    "batch_size": 16,
+    "max_length": 192,
+    "learning_rate": 0.001,
+    "epochs_max": 5,
+    "epochs_effectuees": null,
+    "n_train": 40000,
+    "n_val": 3000,
+    "n_test": null,
+    "seed": null,
+    "mixed_precision": "mixed_float16"
+  },
+  "validation": {
+    "best_epoch": null,
+    "best_f1_macro": null
+  },
+  "test": {
+    "accuracy": 0.774,
+    "f1_macro": 0.703
+  },
+  "baselines": {},
+  "seuil": {},
+  "provenance": "manual",
+  "note": "Chiffres transcrits depuis docs/cwe-cadrage.md (releve manuel, sessions du 30-31/07/2026). Config partiellement inconnue (champs null) : a re-jouer pour certifier."
+}

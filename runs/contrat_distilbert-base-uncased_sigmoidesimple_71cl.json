@@ -1,0 +1,98 @@
+{
+  "run_id": "distilbert-base-uncased_sigmoidesimple_71cl",
+  "annee_population": 2025,
+  "n_population": 43229,
+  "part_dans_perimetre": 0.8449420527886372,
+  "taux_faux_nommage_hors_perimetre": 0.6200208861703714,
+  "cible_precision": 0.9,
+  "precision_max_observee": 1.0,
+  "courbe": [
+    {
+      "seuil": 0.0,
+      "couverture": 0.9044160170256078,
+      "n": 39097,
+      "precision": 0.6018620354502903
+    },
+    {
+      "seuil": 0.5,
+      "couverture": 0.784959170926924,
+      "n": 33933,
+      "precision": 0.6687295553001503
+    },
+    {
+      "seuil": 0.7,
+      "couverture": 0.7149135996668903,
+      "n": 30905,
+      "precision": 0.7093350590519334
+    },
+    {
+      "seuil": 0.8,
+      "couverture": 0.6736218742048162,
+      "n": 29120,
+      "precision": 0.7315590659340659
+    },
+    {
+      "seuil": 0.9,
+      "couverture": 0.6108399454070185,
+      "n": 26406,
+      "precision": 0.7669090358251912
+    },
+    {
+      "seuil": 0.95,
+      "couverture": 0.5481042818478337,
+      "n": 23694,
+      "precision": 0.7928589516333249
+    },
+    {
+      "seuil": 0.99,
+      "couverture": 0.3476832681764556,
+      "n": 15030,
+      "precision": 0.7986693280106454
+    },
+    {
+      "seuil": 0.995,
+      "couverture": 0.15683915889796202,
+      "n": 6780,
+      "precision": 0.7522123893805309
+    },
+    {
+      "seuil": 0.999,
+      "couverture": 0.0008559069143399107,
+      "n": 37,
+      "precision": 1.0
+    }
+  ],
+  "points_optimaux": {
+    "0.80": {
+      "seuil": 0.9617010951042175,
+      "n_cve": 22738,
+      "couverture": 0.5259894977908348,
+      "precision": 0.8000263875450787
+    },
+    "0.85": {
+      "seuil": 0.9966026544570923,
+      "n_cve": 3322,
+      "couverture": 0.0768465613361401,
+      "precision": 0.8500903070439494
+    },
+    "0.90": {
+      "seuil": 0.9970493316650391,
+      "n_cve": 2583,
+      "couverture": 0.059751555668648364,
+      "precision": 0.9001161440185831
+    },
+    "0.95": {
+      "seuil": 0.9976455569267273,
+      "n_cve": 1871,
+      "couverture": 0.0432811307224317,
+      "precision": 0.9502939604489578
+    }
+  },
+  "contrat": {
+    "seuil": 0.9970493316650391,
+    "n_cve": 2583,
+    "couverture": 0.059751555668648364,
+    "precision": 0.9001161440185831
+  },
+  "provenance": "contrat_precision.py"
+}

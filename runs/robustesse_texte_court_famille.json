@@ -1,0 +1,60 @@
+{
+  "modele": "famille",
+  "seuil": 0.8569203019142151,
+  "n_echantillon": 8000,
+  "mesures": [
+    {
+      "longueur": 40,
+      "n_car_moyen": 39.99925,
+      "couverture": 0.510875,
+      "precision": 0.7262050403719109,
+      "confiance_moyenne": 0.7624180912971497
+    },
+    {
+      "longueur": 60,
+      "n_car_moyen": 59.96025,
+      "couverture": 0.595875,
+      "precision": 0.696245017830921,
+      "confiance_moyenne": 0.8283056616783142
+    },
+    {
+      "longueur": 80,
+      "n_car_moyen": 79.762625,
+      "couverture": 0.618,
+      "precision": 0.7793284789644013,
+      "confiance_moyenne": 0.8455361127853394
+    },
+    {
+      "longueur": 120,
+      "n_car_moyen": 118.580125,
+      "couverture": 0.727375,
+      "precision": 0.8168070115140058,
+      "confiance_moyenne": 0.8884926438331604
+    },
+    {
+      "longueur": 200,
+      "n_car_moyen": 189.252375,
+      "couverture": 0.781125,
+      "precision": 0.8444551128180509,
+      "confiance_moyenne": 0.9112545251846313
+    },
+    {
+      "longueur": 320,
+      "n_car_moyen": 261.714375,
+      "couverture": 0.866,
+      "precision": 0.8891454965357968,
+      "confiance_moyenne": 0.9432171583175659
+    },
+    {
+      "longueur": "complete",
+      "n_car_moyen": 387.61225,
+      "couverture": 0.870625,
+      "precision": 0.8926058865757358,
+      "confiance_moyenne": 0.9460278153419495
+    }
+  ],
+  "chute_couverture": 0.5867910983488873,
+  "variation_precision": -0.1664008462038249,
+  "note": "troncature du MEME texte : isole la longueur. Ne teste PAS le vocabulaire d'un scanner -- une description NVD tronquee reste du style NVD.",
+  "provenance": "robustesse_texte_court.py"
+}

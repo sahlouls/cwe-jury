@@ -1,0 +1,12 @@
+{
+ "run_id": "distilbert-base-uncased_famille_40k",
+ "data_dir": "data/cwe_famille",
+ "num_classes": 11,
+ "n_train": 40000,
+ "test": {
+  "accuracy": 0.8232205232598487,
+  "f1_macro": 0.5226284372804044,
+  "f1_weighted": 0.8254922423705265
+ },
+ "provenance": "entrainement_famille.py"
+}
