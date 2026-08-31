@@ -2194,6 +2194,10 @@ def _charger_synthese(dossier='runs'):
   lignes = {}
   for p in sorted(d.glob('*.json')):
     o = _json.loads(p.read_text())
+    # runs/ accueille aussi des artefacts d'analyse qui ne sont pas des runs -- et parfois
+    # pas meme des objets JSON. On les ignore au lieu de planter sur le premier venu.
+    if not isinstance(o, dict):
+      continue
     rid = o.get('run_id')
     if not rid:
       continue
@@ -2201,11 +2205,14 @@ def _charger_synthese(dossier='runs'):
       lignes.setdefault(rid, {})['f'] = o.get('taux_faux_nommage_hors_perimetre')
       lignes.setdefault(rid, {})['part_perimetre'] = o.get('part_dans_perimetre')
     elif p.name.startswith('seuils_'):
-      c = o.get('contrat_hors_echantillon')
+      # 'global' = cible fixee D'AVANCE, seuil calibre sur la validation, applique tel quel.
+      # NE PAS lire 'contrat_hors_echantillon' : ce champ choisit sa cible de calibration au vu
+      # des resultats de l'annee de test -- c'est la fuite decrite au §7 du notebook d'argument.
+      c = o.get('global')
       if c:
         lignes.setdefault(rid, {}).update(
             couverture=c['couverture'], precision_prod=c['precision'],
-            n_cve=c['n_cve'], seuil=c['seuil'], cible_cal=c['cible_cal'])
+            n_cve=c['n_cve'], seuil=c['seuil'], cible_cal=o.get('cible', 0.90))
     elif p.name.startswith('cascade_') or 'config' not in o:
       continue
     else:
@@ -2329,13 +2336,20 @@ affichent la meilleure accuracy du projet (0.9702) et sont pourtant **inexploita
 couvrent que 41 % des CVE reelles, et le modele - qui n'a aucune sortie "autre" - attribue un CWE
 a **100 %** des CVE hors de son perimetre. Sa precision reelle tombe a **0.3983**.
 
-**Les trois axes testes donnent la meme lecon** :
+**Les axes testes, au protocole honnete** (cible fixee d'avance, seuil calibre sur la validation).
+On compte les **CVE correctement nommees par an** — precision x reponses — parce que les deux axes
+du contrat bougent et qu'un seul nombre ne suffit plus :
 
 | Axe modifie | Effet en laboratoire | Effet en production |
 |---|---|---|
-| Perimetre 71 -> 10 classes | **+0.48** macro-F1 | couverture 31,9 % -> **0,4 %** |
-| Perimetre 71 -> 121 classes | −0.05 macro-F1 | 31,9 % -> 8,6 % |
-| Modele DistilBERT -> SecureBERT | **+0.017** macro-F1 | 31,9 % -> **18,1 %** |
+| Perimetre 71 -> 10 classes | **+0.48** macro-F1 | **18 732 -> 2 426** CVE justes/an |
+| Perimetre 71 -> 121 classes | −0.05 macro-F1 | 18 732 -> 19 021 (indistinguable) |
+| Modele DistilBERT -> SecureBERT | **+0.017** macro-F1 | 18 732 -> 18 286 (indistinguable) |
+| 5,45x plus de donnees (40k -> 218k) | **+0.033** macro-F1 | **18 732 -> 20 400** ✅ |
+
+⚠️ **Correction.** Une version anterieure comparait ces axes « a 90 % de precision imposee », seuil
+cherche **sur l'annee de test**. Elle concluait que *toutes* les pistes echouaient, y compris
+« plus de donnees ». Au protocole honnete ce levier **fonctionne** (+1 700 CVE justes/an).
 
 ➜ **L'accuracy ne predit pas la valeur en production sur une tache a perimetre ouvert.** Ce qui
 compte est le **comportement d'abstention** du modele - et il n'est correle ni au nombre de classes,

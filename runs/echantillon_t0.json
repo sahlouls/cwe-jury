@@ -1,962 +1,967 @@
-[
- {
-  "cve":"CVE-2025-64507",
-  "cwe_final":"CWE-269",
-  "cwe_t0":"CWE-269",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-1863",
-  "cwe_final":"CWE-1188",
-  "cwe_t0":"CWE-1188",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-0401",
-  "cwe_final":"CWE-22",
-  "cwe_t0":"CWE-22",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-59231",
-  "cwe_final":"CWE-843",
-  "cwe_t0":"CWE-843",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-25427",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":9
- },
- {
-  "cve":"CVE-2025-46343",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-54895",
-  "cwe_final":"CWE-190",
-  "cwe_t0":"CWE-190",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-13022",
-  "cwe_final":"CWE-703",
-  "cwe_t0":"CWE-703",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":7
- },
- {
-  "cve":"CVE-2025-20151",
-  "cwe_final":"CWE-1284",
-  "cwe_t0":"CWE-16",
-  "cwe_nvd":"CWE-1284",
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-20329",
-  "cwe_final":"CWE-532",
-  "cwe_t0":"CWE-532",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-14855",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-68794",
-  "cwe_final":"CWE-191",
-  "cwe_t0":null,
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-6819",
-  "cwe_final":"CWE-74",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":"CWE-89",
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-30607",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-36185",
-  "cwe_final":"CWE-943",
-  "cwe_t0":"CWE-943",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-8754",
-  "cwe_final":"CWE-306",
-  "cwe_t0":"CWE-306",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-27521",
-  "cwe_final":"CWE-276",
-  "cwe_t0":"CWE-264",
-  "cwe_nvd":"CWE-276",
-  "desc_modifiee":false,
-  "n_evenements":6
- },
- {
-  "cve":"CVE-2025-32699",
-  "cwe_final":"CWE-74",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-13161",
-  "cwe_final":"CWE-23",
-  "cwe_t0":"CWE-23",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-54269",
-  "cwe_final":"CWE-125",
-  "cwe_t0":"CWE-125",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-54913",
-  "cwe_final":"CWE-362",
-  "cwe_t0":"CWE-362",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-60150",
-  "cwe_final":"CWE-98",
-  "cwe_t0":"CWE-98",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-52763",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":6
- },
- {
-  "cve":"CVE-2025-2550",
-  "cwe_final":"CWE-266",
-  "cwe_t0":"CWE-284",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-12439",
-  "cwe_final":"CWE-326",
-  "cwe_t0":"CWE-326",
-  "cwe_nvd":"CWE-326",
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-3801",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-21798",
-  "cwe_final":"CWE-476",
-  "cwe_t0":"CWE-476",
-  "cwe_nvd":"CWE-476",
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-21303",
-  "cwe_final":"CWE-122",
-  "cwe_t0":"CWE-122",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-31328",
-  "cwe_final":"CWE-352",
-  "cwe_t0":"CWE-352",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-39240",
-  "cwe_final":"CWE-78",
-  "cwe_t0":"CWE-78",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-40687",
-  "cwe_final":"CWE-89",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-38675",
-  "cwe_final":"CWE-362",
-  "cwe_t0":"CWE-362",
-  "cwe_nvd":"CWE-362",
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-62192",
-  "cwe_final":"CWE-89",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-6581",
-  "cwe_final":"CWE-74",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":"CWE-89",
-  "desc_modifiee":false,
-  "n_evenements":6
- },
- {
-  "cve":"CVE-2025-53308",
-  "cwe_final":"CWE-352",
-  "cwe_t0":"CWE-352",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-4174",
-  "cwe_final":"CWE-74",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":"CWE-89",
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-46448",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-64334",
-  "cwe_final":"CWE-770",
-  "cwe_t0":"CWE-770",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-2202",
-  "cwe_final":"CWE-863",
-  "cwe_t0":"CWE-863",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-68463",
-  "cwe_final":"CWE-611",
-  "cwe_t0":"CWE-611",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-60307",
-  "cwe_final":"CWE-89",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":6
- },
- {
-  "cve":"CVE-2025-5608",
-  "cwe_final":"CWE-119",
-  "cwe_t0":"CWE-119",
-  "cwe_nvd":"CWE-120",
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-36513",
-  "cwe_final":"CWE-352",
-  "cwe_t0":"CWE-352",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-59206",
-  "cwe_final":"CWE-416",
-  "cwe_t0":"CWE-416",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-32098",
-  "cwe_final":"CWE-269",
-  "cwe_t0":"CWE-269",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-64107",
-  "cwe_final":"CWE-22",
-  "cwe_t0":"CWE-22",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-14751",
-  "cwe_final":"CWE-620",
-  "cwe_t0":"CWE-620",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-37732",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-39433",
-  "cwe_final":"CWE-352",
-  "cwe_t0":"CWE-352",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-67941",
-  "cwe_final":"CWE-98",
-  "cwe_t0":"CWE-98",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-60703",
-  "cwe_final":"CWE-822",
-  "cwe_t0":"CWE-822",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-38531",
-  "cwe_final":"CWE-908",
-  "cwe_t0":"CWE-908",
-  "cwe_nvd":"CWE-908",
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-40779",
-  "cwe_final":"CWE-476",
-  "cwe_t0":"CWE-476",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-58381",
-  "cwe_final":"CWE-35",
-  "cwe_t0":"CWE-35",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-21595",
-  "cwe_final":"CWE-401",
-  "cwe_t0":"CWE-401",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-54112",
-  "cwe_final":"CWE-416",
-  "cwe_t0":"CWE-416",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-23749",
-  "cwe_final":"CWE-352",
-  "cwe_t0":"CWE-352",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-45346",
-  "cwe_final":"CWE-89",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-22065",
-  "cwe_final":"CWE-476",
-  "cwe_t0":"CWE-476",
-  "cwe_nvd":"CWE-476",
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-60938",
-  "cwe_final":"CWE-20",
-  "cwe_t0":"CWE-20",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-60338",
-  "cwe_final":"CWE-787",
-  "cwe_t0":"CWE-787",
-  "cwe_nvd":"CWE-787",
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-10780",
-  "cwe_final":"CWE-74",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":"CWE-89",
-  "desc_modifiee":false,
-  "n_evenements":6
- },
- {
-  "cve":"CVE-2025-64092",
-  "cwe_final":"CWE-89",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-41225",
-  "cwe_final":"CWE-78",
-  "cwe_t0":"CWE-78",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-38017",
-  "cwe_final":"CWE-835",
-  "cwe_t0":null,
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-8551",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-53862",
-  "cwe_final":"CWE-497",
-  "cwe_t0":"CWE-497",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-46862",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-12872",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-54722",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":8
- },
- {
-  "cve":"CVE-2025-59901",
-  "cwe_final":"CWE-352",
-  "cwe_t0":"CWE-352",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-6027",
-  "cwe_final":"CWE-287",
-  "cwe_t0":null,
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-57986",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-70103",
-  "cwe_final":"CWE-122",
-  "cwe_t0":"CWE-122",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-58462",
-  "cwe_final":"CWE-89",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-29084",
-  "cwe_final":"CWE-89",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-6407",
-  "cwe_final":"CWE-74",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":6
- },
- {
-  "cve":"CVE-2025-61822",
-  "cwe_final":"CWE-20",
-  "cwe_t0":"CWE-20",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-14153",
-  "cwe_final":"CWE-89",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-23987",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-8424",
-  "cwe_final":"CWE-1284",
-  "cwe_t0":"CWE-1284",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-59102",
-  "cwe_final":"CWE-312",
-  "cwe_t0":"CWE-312",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-37833",
-  "cwe_final":"CWE-20",
-  "cwe_t0":null,
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-43410",
-  "cwe_final":"CWE-524",
-  "cwe_t0":"CWE-524",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":7
- },
- {
-  "cve":"CVE-2025-4560",
-  "cwe_final":"CWE-306",
-  "cwe_t0":"CWE-306",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-6347",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":"CWE-79",
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-59616",
-  "cwe_final":"CWE-416",
-  "cwe_t0":"CWE-416",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-7190",
-  "cwe_final":"CWE-284",
-  "cwe_t0":"CWE-284",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":7
- },
- {
-  "cve":"CVE-2025-51967",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-15273",
-  "cwe_final":"CWE-121",
-  "cwe_t0":"CWE-121",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-65790",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-39582",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-47072",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-6221",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-3668",
-  "cwe_final":"CWE-266",
-  "cwe_t0":"CWE-284",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-26468",
-  "cwe_final":"CWE-306",
-  "cwe_t0":"CWE-306",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-50188",
-  "cwe_final":"CWE-89",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-63020",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":6
- },
- {
-  "cve":"CVE-2025-31325",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-50926",
-  "cwe_final":"CWE-89",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-12084",
-  "cwe_final":"CWE-407",
-  "cwe_t0":"CWE-407",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":9
- },
- {
-  "cve":"CVE-2025-11908",
-  "cwe_final":"CWE-284",
-  "cwe_t0":"CWE-284",
-  "cwe_nvd":"CWE-434",
-  "desc_modifiee":false,
-  "n_evenements":6
- },
- {
-  "cve":"CVE-2025-36855",
-  "cwe_final":"CWE-126",
-  "cwe_t0":"CWE-126",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-55168",
-  "cwe_final":"CWE-89",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-23242",
-  "cwe_final":"CWE-284",
-  "cwe_t0":"CWE-284",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-50110",
-  "cwe_final":"CWE-319",
-  "cwe_t0":"CWE-319",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-54110",
-  "cwe_final":"CWE-190",
-  "cwe_t0":"CWE-190",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-38389",
-  "cwe_final":"CWE-401",
-  "cwe_t0":null,
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-69653",
-  "cwe_final":"CWE-617",
-  "cwe_t0":"CWE-617",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-31115",
-  "cwe_final":"CWE-366",
-  "cwe_t0":"CWE-476",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":7
- },
- {
-  "cve":"CVE-2025-61740",
-  "cwe_final":"CWE-346",
-  "cwe_t0":"CWE-346",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":3
- },
- {
-  "cve":"CVE-2025-3314",
-  "cwe_final":"CWE-74",
-  "cwe_t0":"CWE-89",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-13389",
-  "cwe_final":"CWE-639",
-  "cwe_t0":"CWE-639",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-13249",
-  "cwe_final":"CWE-284",
-  "cwe_t0":"CWE-284",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-28869",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":5
- },
- {
-  "cve":"CVE-2025-1527",
-  "cwe_final":"CWE-79",
-  "cwe_t0":"CWE-79",
-  "cwe_nvd":"CWE-79",
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-11059",
-  "cwe_final":"CWE-22",
-  "cwe_t0":null,
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":0
- },
- {
-  "cve":"CVE-2025-2324",
-  "cwe_final":"CWE-269",
-  "cwe_t0":"CWE-269",
-  "cwe_nvd":null,
-  "desc_modifiee":false,
-  "n_evenements":4
- },
- {
-  "cve":"CVE-2025-53506",
-  "cwe_final":"CWE-400",
-  "cwe_t0":"CWE-400",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":10
- },
- {
-  "cve":"CVE-2025-30994",
-  "cwe_final":"CWE-352",
-  "cwe_t0":"CWE-352",
-  "cwe_nvd":null,
-  "desc_modifiee":true,
-  "n_evenements":5
- }
-]
+{
+ "note": "premier echantillon NVD (recoupement). Supersede par derive_etiquette.json, qui ajoute les delais et la relation de famille -- conserve pour le champ 'cwe_nvd' (CWE ajoute specifiquement par le NVD), source du taux de 13,3 %.",
+ "n": 120,
+ "provenance": "echantillon_t0.py (scratchpad)",
+ "detail": [
+  {
+   "cve": "CVE-2025-64507",
+   "cwe_final": "CWE-269",
+   "cwe_t0": "CWE-269",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-1863",
+   "cwe_final": "CWE-1188",
+   "cwe_t0": "CWE-1188",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-0401",
+   "cwe_final": "CWE-22",
+   "cwe_t0": "CWE-22",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-59231",
+   "cwe_final": "CWE-843",
+   "cwe_t0": "CWE-843",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-25427",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 9
+  },
+  {
+   "cve": "CVE-2025-46343",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-54895",
+   "cwe_final": "CWE-190",
+   "cwe_t0": "CWE-190",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-13022",
+   "cwe_final": "CWE-703",
+   "cwe_t0": "CWE-703",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 7
+  },
+  {
+   "cve": "CVE-2025-20151",
+   "cwe_final": "CWE-1284",
+   "cwe_t0": "CWE-16",
+   "cwe_nvd": "CWE-1284",
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-20329",
+   "cwe_final": "CWE-532",
+   "cwe_t0": "CWE-532",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-14855",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-68794",
+   "cwe_final": "CWE-191",
+   "cwe_t0": null,
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-6819",
+   "cwe_final": "CWE-74",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": "CWE-89",
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-30607",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-36185",
+   "cwe_final": "CWE-943",
+   "cwe_t0": "CWE-943",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-8754",
+   "cwe_final": "CWE-306",
+   "cwe_t0": "CWE-306",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-27521",
+   "cwe_final": "CWE-276",
+   "cwe_t0": "CWE-264",
+   "cwe_nvd": "CWE-276",
+   "desc_modifiee": false,
+   "n_evenements": 6
+  },
+  {
+   "cve": "CVE-2025-32699",
+   "cwe_final": "CWE-74",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-13161",
+   "cwe_final": "CWE-23",
+   "cwe_t0": "CWE-23",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-54269",
+   "cwe_final": "CWE-125",
+   "cwe_t0": "CWE-125",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-54913",
+   "cwe_final": "CWE-362",
+   "cwe_t0": "CWE-362",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-60150",
+   "cwe_final": "CWE-98",
+   "cwe_t0": "CWE-98",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-52763",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 6
+  },
+  {
+   "cve": "CVE-2025-2550",
+   "cwe_final": "CWE-266",
+   "cwe_t0": "CWE-284",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-12439",
+   "cwe_final": "CWE-326",
+   "cwe_t0": "CWE-326",
+   "cwe_nvd": "CWE-326",
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-3801",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-21798",
+   "cwe_final": "CWE-476",
+   "cwe_t0": "CWE-476",
+   "cwe_nvd": "CWE-476",
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-21303",
+   "cwe_final": "CWE-122",
+   "cwe_t0": "CWE-122",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-31328",
+   "cwe_final": "CWE-352",
+   "cwe_t0": "CWE-352",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-39240",
+   "cwe_final": "CWE-78",
+   "cwe_t0": "CWE-78",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-40687",
+   "cwe_final": "CWE-89",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-38675",
+   "cwe_final": "CWE-362",
+   "cwe_t0": "CWE-362",
+   "cwe_nvd": "CWE-362",
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-62192",
+   "cwe_final": "CWE-89",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-6581",
+   "cwe_final": "CWE-74",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": "CWE-89",
+   "desc_modifiee": false,
+   "n_evenements": 6
+  },
+  {
+   "cve": "CVE-2025-53308",
+   "cwe_final": "CWE-352",
+   "cwe_t0": "CWE-352",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-4174",
+   "cwe_final": "CWE-74",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": "CWE-89",
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-46448",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-64334",
+   "cwe_final": "CWE-770",
+   "cwe_t0": "CWE-770",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-2202",
+   "cwe_final": "CWE-863",
+   "cwe_t0": "CWE-863",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-68463",
+   "cwe_final": "CWE-611",
+   "cwe_t0": "CWE-611",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-60307",
+   "cwe_final": "CWE-89",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 6
+  },
+  {
+   "cve": "CVE-2025-5608",
+   "cwe_final": "CWE-119",
+   "cwe_t0": "CWE-119",
+   "cwe_nvd": "CWE-120",
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-36513",
+   "cwe_final": "CWE-352",
+   "cwe_t0": "CWE-352",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-59206",
+   "cwe_final": "CWE-416",
+   "cwe_t0": "CWE-416",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-32098",
+   "cwe_final": "CWE-269",
+   "cwe_t0": "CWE-269",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-64107",
+   "cwe_final": "CWE-22",
+   "cwe_t0": "CWE-22",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-14751",
+   "cwe_final": "CWE-620",
+   "cwe_t0": "CWE-620",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-37732",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-39433",
+   "cwe_final": "CWE-352",
+   "cwe_t0": "CWE-352",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-67941",
+   "cwe_final": "CWE-98",
+   "cwe_t0": "CWE-98",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-60703",
+   "cwe_final": "CWE-822",
+   "cwe_t0": "CWE-822",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-38531",
+   "cwe_final": "CWE-908",
+   "cwe_t0": "CWE-908",
+   "cwe_nvd": "CWE-908",
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-40779",
+   "cwe_final": "CWE-476",
+   "cwe_t0": "CWE-476",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-58381",
+   "cwe_final": "CWE-35",
+   "cwe_t0": "CWE-35",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-21595",
+   "cwe_final": "CWE-401",
+   "cwe_t0": "CWE-401",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-54112",
+   "cwe_final": "CWE-416",
+   "cwe_t0": "CWE-416",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-23749",
+   "cwe_final": "CWE-352",
+   "cwe_t0": "CWE-352",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-45346",
+   "cwe_final": "CWE-89",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-22065",
+   "cwe_final": "CWE-476",
+   "cwe_t0": "CWE-476",
+   "cwe_nvd": "CWE-476",
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-60938",
+   "cwe_final": "CWE-20",
+   "cwe_t0": "CWE-20",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-60338",
+   "cwe_final": "CWE-787",
+   "cwe_t0": "CWE-787",
+   "cwe_nvd": "CWE-787",
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-10780",
+   "cwe_final": "CWE-74",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": "CWE-89",
+   "desc_modifiee": false,
+   "n_evenements": 6
+  },
+  {
+   "cve": "CVE-2025-64092",
+   "cwe_final": "CWE-89",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-41225",
+   "cwe_final": "CWE-78",
+   "cwe_t0": "CWE-78",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-38017",
+   "cwe_final": "CWE-835",
+   "cwe_t0": null,
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-8551",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-53862",
+   "cwe_final": "CWE-497",
+   "cwe_t0": "CWE-497",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-46862",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-12872",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-54722",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 8
+  },
+  {
+   "cve": "CVE-2025-59901",
+   "cwe_final": "CWE-352",
+   "cwe_t0": "CWE-352",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-6027",
+   "cwe_final": "CWE-287",
+   "cwe_t0": null,
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-57986",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-70103",
+   "cwe_final": "CWE-122",
+   "cwe_t0": "CWE-122",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-58462",
+   "cwe_final": "CWE-89",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-29084",
+   "cwe_final": "CWE-89",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-6407",
+   "cwe_final": "CWE-74",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 6
+  },
+  {
+   "cve": "CVE-2025-61822",
+   "cwe_final": "CWE-20",
+   "cwe_t0": "CWE-20",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-14153",
+   "cwe_final": "CWE-89",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-23987",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-8424",
+   "cwe_final": "CWE-1284",
+   "cwe_t0": "CWE-1284",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-59102",
+   "cwe_final": "CWE-312",
+   "cwe_t0": "CWE-312",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-37833",
+   "cwe_final": "CWE-20",
+   "cwe_t0": null,
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-43410",
+   "cwe_final": "CWE-524",
+   "cwe_t0": "CWE-524",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 7
+  },
+  {
+   "cve": "CVE-2025-4560",
+   "cwe_final": "CWE-306",
+   "cwe_t0": "CWE-306",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-6347",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": "CWE-79",
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-59616",
+   "cwe_final": "CWE-416",
+   "cwe_t0": "CWE-416",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-7190",
+   "cwe_final": "CWE-284",
+   "cwe_t0": "CWE-284",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 7
+  },
+  {
+   "cve": "CVE-2025-51967",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-15273",
+   "cwe_final": "CWE-121",
+   "cwe_t0": "CWE-121",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-65790",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-39582",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-47072",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-6221",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-3668",
+   "cwe_final": "CWE-266",
+   "cwe_t0": "CWE-284",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-26468",
+   "cwe_final": "CWE-306",
+   "cwe_t0": "CWE-306",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-50188",
+   "cwe_final": "CWE-89",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-63020",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 6
+  },
+  {
+   "cve": "CVE-2025-31325",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-50926",
+   "cwe_final": "CWE-89",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-12084",
+   "cwe_final": "CWE-407",
+   "cwe_t0": "CWE-407",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 9
+  },
+  {
+   "cve": "CVE-2025-11908",
+   "cwe_final": "CWE-284",
+   "cwe_t0": "CWE-284",
+   "cwe_nvd": "CWE-434",
+   "desc_modifiee": false,
+   "n_evenements": 6
+  },
+  {
+   "cve": "CVE-2025-36855",
+   "cwe_final": "CWE-126",
+   "cwe_t0": "CWE-126",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-55168",
+   "cwe_final": "CWE-89",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-23242",
+   "cwe_final": "CWE-284",
+   "cwe_t0": "CWE-284",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-50110",
+   "cwe_final": "CWE-319",
+   "cwe_t0": "CWE-319",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-54110",
+   "cwe_final": "CWE-190",
+   "cwe_t0": "CWE-190",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-38389",
+   "cwe_final": "CWE-401",
+   "cwe_t0": null,
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-69653",
+   "cwe_final": "CWE-617",
+   "cwe_t0": "CWE-617",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-31115",
+   "cwe_final": "CWE-366",
+   "cwe_t0": "CWE-476",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 7
+  },
+  {
+   "cve": "CVE-2025-61740",
+   "cwe_final": "CWE-346",
+   "cwe_t0": "CWE-346",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 3
+  },
+  {
+   "cve": "CVE-2025-3314",
+   "cwe_final": "CWE-74",
+   "cwe_t0": "CWE-89",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-13389",
+   "cwe_final": "CWE-639",
+   "cwe_t0": "CWE-639",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-13249",
+   "cwe_final": "CWE-284",
+   "cwe_t0": "CWE-284",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-28869",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 5
+  },
+  {
+   "cve": "CVE-2025-1527",
+   "cwe_final": "CWE-79",
+   "cwe_t0": "CWE-79",
+   "cwe_nvd": "CWE-79",
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-11059",
+   "cwe_final": "CWE-22",
+   "cwe_t0": null,
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 0
+  },
+  {
+   "cve": "CVE-2025-2324",
+   "cwe_final": "CWE-269",
+   "cwe_t0": "CWE-269",
+   "cwe_nvd": null,
+   "desc_modifiee": false,
+   "n_evenements": 4
+  },
+  {
+   "cve": "CVE-2025-53506",
+   "cwe_final": "CWE-400",
+   "cwe_t0": "CWE-400",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 10
+  },
+  {
+   "cve": "CVE-2025-30994",
+   "cwe_final": "CWE-352",
+   "cwe_t0": "CWE-352",
+   "cwe_nvd": null,
+   "desc_modifiee": true,
+   "n_evenements": 5
+  }
+ ]
+}
