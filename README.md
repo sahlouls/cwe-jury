@@ -42,13 +42,13 @@ uv run jupyter lab            # ouvrir llm_fine_tuning_cwe.ipynb
 Le notebook "argument" se re-execute **tel quel** (il lit `runs/*.json`). Le `07_...ipynb` (entrainement)
 demande un GPU + les donnees ; il est livre **pre-execute** pour lecture.
 
-> ⚠️ **A savoir sur `07_cwe_finetuning.ipynb`.** Ses **sorties de code** precedent une correction de
-> protocole : sa synthese finale affiche l'ancien contrat (`91,4 % / 32,2 %`), obtenu en choisissant
-> la cible de calibration au vu de l'annee de test. Le contrat qui fait foi est **81,5 % de precision
-> sur 57,9 % du flux** (`RAPPORT.md` §6, et section 7 du notebook d'argument pour le detail de la
-> fuite). Un bandeau en tete du notebook le rappelle, et ses cellules markdown ont ete corrigees ;
-> regenerer les sorties demande de reexecuter l'entrainement (~2 h de GPU). Le code, les courbes
-> d'apprentissage et les metriques de laboratoire, eux, restent valides.
+> ℹ️ **A savoir sur `07_cwe_finetuning.ipynb`.** Une correction de protocole a ete appliquee apres
+> son execution GPU : sa synthese affichait l'ancien contrat (`91,4 % / 32,2 %`), obtenu en choisissant
+> la cible de calibration au vu de l'annee de test. **La section de synthese a ete reexecutee** contre
+> le registre corrige et affiche desormais le contrat qui fait foi — **81,5 % de precision sur 57,9 %
+> du flux** (`RAPPORT.md` §6 ; section 7 du notebook d'argument pour le detail de la fuite). Les
+> cellules d'entrainement conservent les sorties du run GPU d'origine, qui restent valides. Un bandeau
+> en tete du notebook resume cet etat.
 
 ## Lancer l'application (demo de deploiement, C4)
 
