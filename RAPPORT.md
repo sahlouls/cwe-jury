@@ -107,7 +107,7 @@ Sur la ligne "jeu complet", les **deux** modèles ont été réentraînés sur l
 
 | Ablation | Mesure | Lecture |
 |---|---|---|
-| **Classes** | 0.4139 (121) -> 0.4671 (71) -> 0.8050 (17) -> 0.9473 (10) | **+0.53** - le plus gros effet en laboratoire |
+| **Classes** | 0.4139 (121) -> 0.4671 (71) -> 0.7909 (17) -> 0.9473 (10) | **+0.53** - le plus gros effet en laboratoire |
 | **Mode** | gelé 0.7030 -> fine-tuning 0.9468 (10 cl.) - gelé **0.1695** -> fine-tuning **0.4671** (71 cl.) | le fine-tuning est indispensable, et **d'autant plus que la tâche est dure** |
 | **Modèle** | domaine +0.0005 (10 cl.) vs **+0.0154** (71 cl.) | l'apport du modèle domaine **croît avec la difficulté** |
 
@@ -135,39 +135,45 @@ Le modèle nomme un CWE sur **100 %** des CVE hors de son périmètre, à n'impo
 
 ### Comparaison à modèle constant
 
-Pour isoler l'effet du périmètre, les trois configurations ci-dessous partagent le **même modèle et le même protocole** ; seul le jeu de classes change. Le contrat est mesuré **hors échantillon** : seuil calé sur 2024, évalué sur 2025.
+Pour isoler l'effet du périmètre, les trois configurations partagent le **même modèle et le même protocole** ; seul le jeu de classes change. Contrat mesuré au **protocole honnête** : cible fixée d'avance, seuil calibré sur 2024, appliqué à 2025. Les deux axes bougeant, on ajoute la seule quantité que l'utilisateur reçoit — les **CVE correctement nommées par an**.
 
-| Périmètre | Flux couvert | Faux nommage `f` | Couverture à >= 90 % | CVE/an |
-|---|---|---|---|---|
-| 10 classes | 41,1 % | **100 %** | 0,4 % | 180 |
-| **71 classes** | 84,5 % | 69,9 % | **31,9 %** | **13 789** |
-| 121 classes | 90,8 % | 86,9 % | 8,6 % | 3 698 |
+| Périmètre | Flux dans le périmètre | Faux nommage `f` | Précision | Couverture | **CVE justes/an** |
+|---|---|---|---|---|---|
+| 10 classes | 41,1 % | **100 %** | 89,2 % | **6,3 %** | **2 426** |
+| **71 classes** | 84,5 % | 71,7 % | 78,3 % | **55,3 %** | **18 732** |
+| 121 classes | 90,8 % | 86,9 % | 77,5 % | **56,8 %** | **19 021** |
 
-**Facteur 77 entre 10 et 71 classes**, et la relation n'est **pas monotone** : un périmètre trop étroit laisse la contamination hors périmètre détruire la précision ; un périmètre trop large ajoute des classes trop rares pour être apprises (87 des 120 ne sont jamais attribuables). Il existe un optimum, et il ne se devine pas - il se mesure.
+**Le périmètre étroit s'effondre** : 10 classes gagne 11 points de précision et perd **49 points de couverture**, soit 16 300 CVE justes en moins par an. La cause est celle du §5 : 59 % du flux est hors périmètre, et le modèle y nomme un CWE dans **100 %** des cas.
 
-### Le meilleur modèle donne le pire contrat
+**Mais 71 et 121 classes sont indistinguables** — 121 gagne 1,5 point de couverture et perd 0,8 de précision. On retient 71 pour la lisibilité et le coût, **pas** parce que la mesure désigne un optimum.
 
-| Sur 71 classes | macro-F1 | `f` | Couverture | CVE/an |
-|---|---|---|---|---|
-| **DistilBERT** (40k) | 0.4671 | 71,7 % | **32,2 %** | **13 923** |
-| SecureBERT (40k) | **0.4825** | 78,4 % | 18,1 % | 7 811 |
+> ⚠️ **Correction.** Les versions précédentes de ce rapport annonçaient ici « 0,4 % / 31,9 % / 8,6 %, facteur 77, relation non monotone, il existe un optimum et il se mesure ». Ces chiffres venaient du protocole qui impose 90 % de précision **sur l'année de test** — celui-là même que le §6 dénonce. **L'argument de l'optimum mesuré ne tient pas** (voir §7).
 
-SecureBERT est meilleur en laboratoire et livre **43 % de couverture en moins**. Il nomme un CWE sur 78,4 % du hors-périmètre contre 71,7 % : le pré-entraînement sur du texte de cybersécurité le rend **plus sûr de lui partout**, y compris là où il devrait douter.
+### Le modèle de domaine ne change rien
 
-### La leçon, sur trois axes indépendants
+| Sur 71 classes | macro-F1 | `f` | Précision | Couverture | CVE justes/an |
+|---|---|---|---|---|---|
+| **DistilBERT** (40k) | 0.4671 | 71,7 % | 78,3 % | **55,3 %** | **18 732** |
+| SecureBERT (40k) | **0.4825** | 78,4 % | 78,7 % | 53,7 % | 18 286 |
 
-| Axe modifié | Effet en laboratoire | Effet en production |
+SecureBERT est meilleur en laboratoire (+0.015 de macro-F1) et **indistinguable** en production : 446 CVE justes d'écart sur 18 700, dans le sens défavorable. Le pré-entraînement sur du texte de cybersécurité n'apporte rien — l'explication plausible étant que le vocabulaire des descriptions de CVE est très stéréotypé, et que DistilBERT a largement assez d'exemples pour l'apprendre en fine-tuning.
+
+> ⚠️ **Correction.** Ce paragraphe s'intitulait « Le meilleur modèle donne le pire contrat » et annonçait « 43 % de couverture en moins ». Au protocole honnête, l'écart est de 1,6 point de couverture. L'affirmation était un artefact de mesure, pas un résultat.
+
+### La leçon : le protocole d'évaluation décide du classement
+
+| Axe modifié | Effet en laboratoire | Effet en production (CVE justes/an) |
 |---|---|---|
-| Périmètre 71 -> 10 classes | **+0.48** macro-F1 | 32,2 % -> **0,4 %** |
-| Périmètre 71 -> 121 classes | −0.05 macro-F1 | 32,2 % -> 8,6 % |
-| Modèle DistilBERT -> SecureBERT | **+0.015** macro-F1 | 32,2 % -> **18,1 %** |
-| **5,45x plus de données** (40k -> 218k) | **+0.033** macro-F1 | 32,2 % -> **31,9 %** |
+| Périmètre 71 → 10 classes | **+0.48** macro-F1 | **18 732 → 2 426** ❌ |
+| Périmètre 71 → 121 classes | −0.05 macro-F1 | 18 732 → 19 021 (indistinguable) |
+| Modèle DistilBERT → SecureBERT | **+0.015** macro-F1 | 18 732 → 18 286 (indistinguable) |
+| **5,45× plus de données** (40k → 218k) | **+0.033** macro-F1 | **18 732 → 20 400** ✅ |
 
-Quatre fois, améliorer la métrique de laboratoire **ne se traduit pas** en valeur d'usage - et trois fois sur quatre, elle la dégrade.
+**Un seul axe détruit réellement la valeur d'usage : réduire le périmètre.** Deux sont neutres. Et le quatrième — plus de données — **aide**, sur les deux axes du contrat à la fois.
 
-**Le cas du jeu complet est le plus démonstratif.** Le modèle entraîné sur 218 000 CVE gagne 7,1 % de macro-F1 (0.4671 -> 0.5001), et son taux de faux nommage *s'améliore* même légèrement (71,7 % -> 69,9 %). Pourtant la couverture ne bouge pas : 31,9 % contre 32,2 %.
+> ⚠️ **Correction, et c'est la plus instructive du rapport.** Ce tableau concluait auparavant : « quatre fois, améliorer la métrique de laboratoire ne se traduit pas en valeur d'usage — et trois fois sur quatre, elle la dégrade », avec « plus de données : 32,2 % → 31,9 % ». C'était mesuré au protocole fuité. Corrigé, **le levier le plus banal de l'apprentissage profond fonctionne** : +1 668 CVE justes par an. Nous nous étions trompés en utilisant, pour comparer, la méthode que nous dénoncions par ailleurs. Détail en §7.
 
-L'explication est arithmétique. Le hors-périmètre représente **15,5 % du flux** et le modèle en nomme **69,9 %** à tort : **10,8 % du flux est faux quoi qu'il arrive**. C'est une **taxe fixe, imposée par le périmètre, que la qualité du modèle ne rembourse pas.** Améliorer la classification *à l'intérieur* du périmètre ne retire aucune de ces erreurs.
+**Ce qui reste vrai, et c'est le résultat central.** Sur la configuration à 10 classes, le hors-périmètre représente **59 % du flux** et le modèle y nomme un CWE dans 100 % des cas : la moitié du flux est fausse par construction, quelle que soit la qualité du modèle. C'est une **taxe imposée par le périmètre, que la qualité du modèle ne rembourse pas** — améliorer la classification *à l'intérieur* du périmètre ne retire aucune de ces erreurs. Sur 71 classes cette taxe tombe à 15,5 % × 71,7 % ≈ 11 % du flux, ce qui la rend supportable.
 
 ---
 
@@ -378,7 +384,7 @@ Entraînement identique, une seule variable retirée. Test sur 2025 (45 275 CVE)
 
 **Mort** : le CWE comme variable d'entrée du PEP.
 
-**Ouvert** : les usages humains - triage, reporting, filtrage par famille de faille. Jamais cadrés, jamais mesurés. Le contrat livrable reste réel (13 789 CVE/an à 90,3 % de précision) ; il ne sert simplement pas la finalité qu'on lui avait assignée.
+**Ouvert** : les usages humains - triage, reporting, filtrage par famille de faille. Jamais cadrés, jamais mesurés. Le contrat livrable reste réel (≈ 25 000 CVE/an à 81,5 % de précision, dont ~20 400 correctement typées) ; il ne sert simplement pas la finalité qu'on lui avait assignée.
 
 **Gagné au passage** : retirer `primary_cwe` du PEP lui fait gagner +0.012 de PR et lui retire 121 dimensions. Un modèle plus simple et plus robuste - livrable concret de ce travail, quoique pas celui qu'on visait.
 
